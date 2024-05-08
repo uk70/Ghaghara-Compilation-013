@@ -1,0 +1,56 @@
+*{
+  margin:0;
+  padding:0;
+}
+/* WOMEN */
+.sk{
+  display:flex;
+  flex-direction:row;
+  padding:32px;
+  background-color: #f9f9f9;
+}
+.sk1{
+  justify-content: center;
+  width:50%;
+  height:669px;
+  background-image: url(https://www.frankandoak.com/cdn/shop/files/Rectangle_35_2160x.jpg?v=1714414024);
+  background-position: center;
+  background-size: cover;
+}
+.sk2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:105px;
+}
+.sk3 h2{
+  font-family: sans-serif;
+  font-weight: 400px;
+}
+.sk3 p{
+  font-size: 20px;
+  line-height: 70px;
+  color: #787878 ;
+  font-family: sans-serif;
+}
+.sk3 a{
+  color : black;
+  font-family: sans-serif;
+  line-height: 23px;
+  font-size: 18px;
+
+}
+/* MEN */
+.skk{
+  display:flex;
+  flex-direction:row-reverse;
+  padding:32px;
+  background-color: #f9f9f9;
+}
+.skk1{
+  width:50%;
+  height:669px;
+  background-image: url(https://www.frankandoak.com/cdn/shop/files/Rectangle_34_2160x.jpg?v=1714414024);
+  background-position: center;
+  background-size: cover;
+}
