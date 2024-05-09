@@ -1,4 +1,11 @@
 {
+    "users" : [
+        {
+            "name": "admin",
+            "email":"admin",
+            "password":"admin123"
+        }
+    ],
     "products" : [
         {
             "name":"Tops",
