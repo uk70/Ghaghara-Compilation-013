@@ -1,4 +1,4 @@
-
+// WOMEN //
 const initWomenSlider = ()=>{
     const skimage = document.querySelector(".sk-caraousel .sk-cimage")
     const slideButtons = document.querySelectorAll(".sk-caraousel .slide-button")
@@ -58,9 +58,11 @@ const initWomenSlider = ()=>{
         updateSrollThumbPosition();
     })
 }
-window.addEventListener("load", initWomenSlider)
+window.addEventListener("load", initWomenSlider);
 
+// WOMEN END //
 
+// MEN //
 const initMenSlider = () => {
     const skimage = document.querySelector(".sk-caraousel-men .sk-cimage");
     const slideButtons = document.querySelectorAll(".sk-caraousel-men .slide-button");
@@ -122,3 +124,5 @@ const initMenSlider = () => {
 };
 
 window.addEventListener("load", initMenSlider);
+
+// MEN END //
