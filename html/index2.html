@@ -4,11 +4,374 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            align-items: center;
+            border: 1px solid rgb(244, 238, 238);
+           
+        }
+        .nav1 {
+            display: flex;
+            gap: 50px;
+        }
+        .nav1 a {
+            text-decoration: none;
+            color: black;
+        }
+        .nav2 i {
+            font-size: 1.4rem;
+            margin-right: 44px;
+        }
+        #container {
+            display: flex;
+            gap: 15px;
+            
+        }
+        #div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            width: 70%;
+            margin-top: 4px;
+        }
+        .imgs {
+            width: calc(50% - 15px); 
+        }
+        .imgs img {
+            width: 100%;
+            height: auto; 
+            object-fit: cover; 
+        }
+        #content {
+            width: 30%;
+            margin-top: 18px;
+        }
+        #content a{
+            color: black;
+
+        }
+        #content .p1{
+            font-size: 1.4rem;
+        }
+        #content .p3{
+            font-size: 0.7rem;
+        }
+        #BestSeller{
+            background-color: black;
+            color: white;     
+            padding: 0.7px;   
+            font-size: 10px;
+            margin-top: 10px;
+            width: 70px;
+
+        }
+        .colorIcons{
+            display: flex;
+            gap: 40px;
+            font-size: 1.7rem;
+        }
+        
+        .sizeButton {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+        .sizeButton button {
+            margin: 6px;
+            padding: 6px;
+            border: 0.1px solid rgb(216, 160, 160);
+            background-color: transparent;
+            cursor: pointer;
+        }
+        .sizeButton button:hover {
+            background-color: black;
+            color: white;
+        }
+        .addToCartBtn {
+            margin-top: 12px;
+            padding: 16px 24px;
+            width: 340px;
+            border: none;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        .addToCartBtn:hover {
+            background-color: #333;
+        }
+        #cartCount{
+            position: relative;
+            bottom: 15px;
+            font-size: 0.8rem;
+        }
+
+        .hrs{
+            margin-top: 40px;
+            opacity: 0.4;
+        }
+        .fit{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .hrss{
+            opacity: 0.4;
+
+        }
+        .RickyCarts {
+    display: flex;
+}
+
+.cartImage {
+    flex: 1;
+}
+
+.cartImage img {
+    height: 140px;
+}
+
+.cartDetails {
+    flex: 0;
+   
+    flex-direction: column;
+    /* justify-content: center; */
+    position: relative;
+    right: 191px;
+}
+#cartWalaPart{
+    margin-top: 16px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    height: auto;
+    width: 100%;
+
+}
+.deleteButton {
+    cursor: pointer;
+    color: gray;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+    </style>
 </head>
 <body>
-    <div id="div"></div>
+    <nav>
+        <div class="nav1">
+            <img src="" alt="">
+            <a href="">Women</a>
+            <a href="">Men</a>
+            <a href="">Sell</a>
+            <a href="">Our story</a>
+        </div>
+        
+        <div class="nav2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-user-tie"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping" id="slide"><span id="cartCount">0</span></i>
+        </div>
+    </nav>
+    <div id="container">
+        <div id="div"></div>
+        <!-- right part of new page layout -->
+        <div id="content">
+            <a href="">Home / Men</a><br>
+            <button id="BestSeller">Best Seller</button>
+            <p class="p1">The Jasper Oxford Shirt in Medium Blue</p>
+            <p>$89.50</p>
+            <p class="p3">4 interest-free payments of $22.37 with Klarna. <a href="">Learn More</a></p>
+            <hr class="hrs">
+            <p>Color : </p>
+            <div class="colorIcons">
+                <i class="fa-sharp fa-solid fa-circle" style="color: #513e60;"></i>
+                <i class="fa-sharp fa-solid fa-circle"></i>
+                <i class="fa-sharp fa-solid fa-circle" style="color: #FFD43B;"></i>
+                <i class="fa-sharp fa-solid fa-circle" style="color: #63E6BE;"></i>
+                <i class="fa-sharp fa-solid fa-circle" style="color: wheat;"></i>
+                <i class="fa-sharp fa-solid fa-circle" style="color: #1b198f;"></i>
+            </div>
+            <p>Select a size</p>
+            
+            <!-- size button part start here code -->
+            <div id="cartButton"></div>
+            <div id="cartWalaPart"></div>
+            <hr class="hrs">
+            <p>Overview</p>
+            <p class="p3">A wardrobe must-have. The Jasper shirt is made with Oxford cloth, a basket-weave fabric that is soft, sturdy, and breathable. 100% organic cotton. Regular fit. Buttoned point collar. Patch pocket at the chest. Recycled buttons.</p>
+            <div class="fit">
+                <h4>Fit & Sizing</h4>
+                <p>+</p>
+            </div>
+            <hr class="hrss">
+            <div class="fit">
+                <h4>Fit & Sizing</h4>
+                <p>+</p>
+            </div>
+            <hr class="hrss">
+            <div class="fit">
+                <h4>Fit & Sizing</h4>
+                <p>+</p>
+            </div>
+            <hr class="hrss">
+            <div class="fit">
+                <h4>Fit & Sizing</h4>
+                <p>+</p>
+            </div>
+            <hr class="hrss">
 
-
+            </div>
+        </div>
+    </div>
 </body>
 </html>
-<script src="/Ghaghara-Compilation-013/script/script.js"></script>
+<script>
+    let product = [
+        {
+          "id": 1,
+          "Image": "https://www.frankandoak.com/cdn/shop/files/1110352-403.7643_1200x.jpg?v=1690985687",
+          "Hover_image": "https://www.frankandoak.com/cdn/shop/files/2940048-8BX.002_450x.jpg?v=1711049510",
+          "product-badge": "new",
+          "Title": "The Garment Dyed Dad Cap in Light Pink",
+          "Price": 29.5,
+          "Size": "L",
+          "Category": "Women"
+        },
+        {
+          "id": 2,
+          "Image": "https://www.frankandoak.com/cdn/shop/files/1110352-403.7652_1200x.jpg?v=1690985687",
+          "Hover_image": "https://www.frankandoak.com/cdn/shop/files/2220131-002.01_450x.jpg?v=1711051177",
+          "product-badge": "new",
+          "Title": "The Celine Bermuda Short in Black",
+          "Price": 89.5,
+          "Size": "XL",
+          "Category": "Women"
+        },
+        {
+          "id": 35,
+          "Image": "https://www.frankandoak.com/cdn/shop/files/1110352-403.7630_1200x.jpg?v=1690985687",
+          "Hover_image": "https://www.frankandoak.com/cdn/shop/files/2210557-2KW.02_450x.jpg?v=1707320155",
+          "Title": "The Classic Cargo Pant in Clay",
+          "Price": 79,
+          "Size": "S",
+          "Category": "Women"
+        },
+        {
+          "id": 43,
+          "Image": "https://www.frankandoak.com/cdn/shop/files/1110352-403.7638_1200x.jpg?v=1690985687",
+          "Hover_image": "https://www.frankandoak.com/cdn/shop/files/2980031-5B0.02_450x.jpg?v=1706729060",
+          "product-badge": "new",
+          "Title": "The Aero Cross Body Bag in Boreal Green",
+          "Price": 98,
+          "Size": "XS",
+          "Category": "Women"
+        },
+        {
+          "id": 48,
+          "Image": "https://www.frankandoak.com/cdn/shop/files/1110352-403.7625_1200x.jpg?v=1690985687",
+          "Hover_image": "https://www.frankandoak.com/cdn/shop/files/2510406-002.02_450x.jpg?v=1694196583",
+          "product-badge": "best seller",
+          "Title": "The Flex Camp Collar Dress in Black",
+          "Price": 84,
+          "Size": "XXL",
+          "Category": "Women"
+        },
+        {
+          "id": 48,
+          "Image": "https://www.frankandoak.com/cdn/shop/files/1110352-403.9339_1200x.jpg?v=1690985587",
+          "Hover_image": "https://www.frankandoak.com/cdn/shop/files/2510406-002.02_450x.jpg?v=1694196583",
+          "product-badge": "best seller",
+          "Title": "The Flex Camp Collar Dress in Black",
+          "Price": 84,
+          "Size": "M",
+          "Category": "Women"
+        }
+    ];
+
+    let cartCount = document.getElementById("cartCount");
+    let count = 0;
+    let selectedSize = null;
+
+    function displayImg() {
+        let div = document.getElementById("div");
+        product.forEach(ele => {
+            let inner = document.createElement("div");
+            inner.className = "imgs";
+            inner.innerHTML = `<img src="${ele.Image}" alt="">`;
+            div.appendChild(inner);
+        });
+    }
+    displayImg();
+
+    function updateCartCount(change) {
+        count += change;
+        cartCount.innerText = count;
+    }
+
+    function sizeButton(product) {
+        let cartButton = document.getElementById("cartButton");
+        let sizeButtonDiv = document.createElement("div");
+        sizeButtonDiv.className = "sizeButton";
+        product.forEach(ele => {
+            let button = document.createElement("button");
+            button.textContent = ele.Size;
+            button.addEventListener("click", () => {
+                selectedSize = ele.Size;
+            });
+            sizeButtonDiv.appendChild(button);
+        });
+        cartButton.appendChild(sizeButtonDiv);
+
+        let addToCartBtn = document.createElement("button");
+        addToCartBtn.className = "addToCartBtn";
+        addToCartBtn.innerText = "Add To Cart";
+        addToCartBtn.addEventListener("click", () => {
+            if (selectedSize) {
+                addInCart(product[0].Image, product[0].Price, product[0].Title);
+                updateCartCount(1);
+            } else {
+                alert("Please select a size first.");
+            }
+        });
+        cartButton.appendChild(addToCartBtn);
+    }
+    sizeButton(product);
+
+
+    // addToCart wala addToIn wala part start here
+
+    
+    function addInCart(image, price, Title) {
+    let cartWalaParts = document.getElementById("cartWalaPart");
+    let cart = document.createElement("div");
+    cart.className = "RickyCarts";
+    cart.innerHTML = `
+    <div class="cartImage">
+        <img src="${image}" alt="">
+    </div>
+    <div class="cartDetails">
+        <button class="deleteButton" onclick="removeFromCart(this)">X</button>
+        <p>Title: ${Title}</p>
+        <p>Size: ${selectedSize}</p>
+        <p>$${price}</p>
+    </div>
+    `;
+    cartWalaParts.appendChild(cart);
+}
+
+function removeFromCart(btn) {
+    let cartItem = btn.parentNode.parentNode;
+    cartItem.parentNode.removeChild(cartItem);
+    updateCartCount(-1);
+}
+
+</script>
