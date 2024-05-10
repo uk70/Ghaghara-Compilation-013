@@ -13,6 +13,17 @@ let signUpContainer = document.getElementById("form-container-signup")
 let toSignUp = document.getElementById("to-sign-up");
 let toLogin = document.getElementById("to-login");
 let closeIconSignup = document.getElementById("close-icon-signup");
+let logoutContainer = document.getElementById("logout-container");
+let logoutBtn = document.getElementById("logout-btn");
+let userNameShow = document.getElementById("user-name-show");
+let isLoggedIn = false;
+let uniqueId = 0;
+
+
+logoutBtn.addEventListener("click", function() {
+    logoutUser();
+});
+
 
 closeIconSearch.addEventListener("click", function() {
         searchContainer.style.display = "none";
@@ -35,7 +46,11 @@ wishList.addEventListener("click", function() {
 });
 
 LoginButton.addEventListener("click", function() {
-    formContainer.style.display = "block";
+    if (isLoggedIn) {
+        alert("You are already logged in. Please logout to login again.");
+    } else {
+        formContainer.style.display = "block";
+    }
 });
 
 closeIcon.addEventListener("click", function() {
@@ -58,59 +73,131 @@ closeIconSignup.addEventListener("click", function(){
 
 //signup
 
+let userURL = "http://localhost:3000/users"
 let signUpForm = document.getElementById("signup-form");
 let loginForm = document.getElementById("login-form");
-
-
-
-signUpForm.addEventListener("submit", function(e){
-    e.preventDefault();
-    signUp();
-});
-
 let userName = document.getElementById("username-field"); 
-let email = document.getElementById("email-field"); 
-let pwd = document.getElementById("pwd-field"); 
+let userEmail = document.getElementById("email-field"); 
+let userPassword = document.getElementById("pwd-field"); 
+let loginUserName = document.getElementById("username-siginup-field");
+let loginUserPwd = document.getElementById("pwd-signup-field");
+let btn = document.getElementById("signup-button-2");
+let loginBtn = document.getElementById("signup-button");
 
- function signUp(){
-        let obj = {
-            name: userName.value,
-            email: email.value,
-            password: pwd.value
-        }
-        // let res = await fetch("http://localhost:3000/users", {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json'
-        //       },
-        //       body: JSON.stringify(obj)
-        // });
-        // let data = await res.json();
-        if(userName.value == "" || email.value == "" || pwd.value == ""){
-            alert("please fill the fields");
-        }
-        localStorage.setItem("loggedUser", JSON.stringify(obj));
-        alert("Signup successful🫡");
-    }
-
-loginForm.addEventListener("submit", function(e){
+// signUpForm.addEventListener("submit", (e)=>{e.preventDefault});
+ btn.addEventListener("click", (e) => {
     e.preventDefault();
-    let username = document.getElementById("username-siginup-field").value;
-    let pwd =  document.getElementById("pwd-signup-field").value;
+    sendUserData();
+ });
 
-    let data = localStorage.getItem("loggedUser");
+ loginBtn.addEventListener("click", (e)=> {
+    e.preventDefault();
+    userLogin();
+})
 
-    if(!data){
-        alert("Please sign up first.");
-        return;
+async function verifyUserData(){
+    try{
+        let res = await fetch(userURL);
+        let data = await res.json();
+        for(let element of data){
+            if(element.username == userName.value){
+                return true
+            } 
+        }
     }
-
-    if (username === data.name && pwd === data.password) {
-        alert("Login successful!");
-    } else {
-        alert("Invalid username or password");
+    catch(err){
+        console.log(err);
     }
-});
+    return false;
+}
+
+
+
+async function sendUserData(){
+    if(userName.value && userEmail.value && userPassword.value){
+        if(userPassword.value.length < 5) alert("Password must contain at least 6 characters")
+        else if(await verifyUserData()) alert(`Username is already registered!`);
+        else{
+            let newObj = 
+            {
+            "id": uniqueId,     
+            "username": userName.value,
+             "email" : userEmail.value,
+             "password" : userPassword.value,
+            };
+            uniqueId++;
+            try{
+                    await fetch(userURL,{
+                    method: "POST",
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(newObj),
+                });
+                alert("Registered Successful");
+                signUpContainer.style.display = "none";
+                isLoggedIn = true;
+                logoutContainer.style.display = "block";
+                userNameShow.innerText = `hello ${userName.value}`;
+            }
+            catch(err){
+                console.log(err);
+            }
+        }
+    }
+    else{
+        alert("Fill all the fields")
+    }
+};
+
+
+async function userLogin(){
+    if(loginUserName.value && loginUserPwd.value){
+        try {
+            let res = await fetch(userURL);
+            let data = await res.json();
+            let found = null;
+            for (let user of data) {
+                if (user.username === loginUserName.value && user.password === loginUserPwd.value) {
+                    found = user;
+                    break;
+                }
+            }
+            if (found) {
+                alert("Login successful");
+                formContainer.style.display = "none";
+                isLoggedIn = true;
+                logoutContainer.style.display = "block";
+                userNameShow.innerText = `hello ${found.username}`;
+            } else {
+                alert("Please sign up first");
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+};
+
+fetchData();
+async function fetchData(){
+    try {
+        let res = await fetch(userURL);
+        let data = await res.json();
+        uniqueId = data.length + 1;
+        console.log(data);
+    } catch (error) {
+        console.log(error);
+    }
+};
+
+function logoutUser() {
+    isLoggedIn = false;
+    userNameShow.innerText = "";
+    logoutContainer.style.display = "none";
+    formContainer.style.display = "block";
+}
+
+
 
 
 
