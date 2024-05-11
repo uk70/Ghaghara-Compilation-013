@@ -241,3 +241,8 @@
    .white-text {
      color: white;
    }
+
+   footer{
+    max-width: 1440px;
+    margin: auto;
+   }
