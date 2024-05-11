@@ -6,6 +6,93 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
+        /* login part  */
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        #mainForm {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(7px); /* Apply a blur effect */
+    z-index: 10; /* Change this value */
+}
+
+
+
+        #forms {
+            position: relative;
+            width: 400px;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            opacity: 0.9;
+        }
+
+        #forms input {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 80%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        #forms label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+            color: #333;
+        }
+
+        #forms button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #forms button:hover {
+            background-color: #162017;
+        }
+
+        hr {
+            margin-top: 19px;
+            width: 80%;
+            opacity: 0.5;
+            color: #999;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+            text-align: left;
+            margin-top: 5px;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            color: #888;
+        }
+
+        /* login par end here */
 
         nav {
             display: flex;
@@ -18,7 +105,14 @@
         .nav1 {
             display: flex;
             gap: 50px;
+            align-items: center;
         }
+        .nav1 h3{
+            margin-left: 8px;
+        }
+        /* #frank{
+            height: 40px;
+        } */
         .nav1 a {
             text-decoration: none;
             color: black;
@@ -126,10 +220,13 @@
         }
         .RickyCarts {
     display: flex;
+    
+
 }
 
 .cartImage {
     flex: 1;
+    margin-top: 4px;
 }
 
 .cartImage img {
@@ -142,7 +239,7 @@
     flex-direction: column;
     /* justify-content: center; */
     position: relative;
-    right: 191px;
+    right: 180px;
 }
 #cartWalaPart{
     margin-top: 16px;
@@ -151,23 +248,70 @@
     width: 100%;
 
 }
-.deleteButton {
-    cursor: pointer;
-    color: gray;
-    font-size: 0.8rem;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    border: none;
-    background-color: transparent;
+.deleteBtn{
+    height: 30px;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    
 }
+.cartDetails hr{
+    width: 170px;
+}
+.horizental{
+    display: inline;
+}
+
+#slide {
+     transition: transform 0.5s ease-in-out;
+}
+
+ #slide:hover {
+      transform: rotate(360deg);
+     }
 
     </style>
 </head>
 <body>
+    <!-- login part -->
+
+    <div id="mainForm">
+        
+        <form id="forms">
+            <!-- Use the correct icon class names -->
+            <p><i class="fas fa-party-horn"></i>Welcome Again <i class="fas fa-party-horn"></i></p>
+            <span class="close">&times;</span>
+            <div>
+                <hr>
+                <input type="text" id="name" placeholder="Enter your Name">
+                <span class="error" id="nameError"></span>
+            </div>
+
+            <div>
+                <hr>
+                <input type="email" id="email" placeholder="Enter your email id">
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div>
+                <hr>
+                <input type="password" id="password" placeholder="Enter your Password">
+                <span class="error" id="passwordError"></span>
+            </div>
+
+            <div>
+                <hr>
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- login part end here -->
+    <!-- nava bar start here -->
+
     <nav>
         <div class="nav1">
-            <img src="" alt="">
+            <h3>Frank And Oak</h3>
             <a href="">Women</a>
             <a href="">Men</a>
             <a href="">Sell</a>
@@ -176,14 +320,20 @@
         
         <div class="nav2">
             <i class="fa-solid fa-magnifying-glass"></i>
-            <i class="fa-solid fa-user-tie"></i>
+            <i class="fa-solid fa-user-tie" id="loginButton"></i>
             <i class="fa-regular fa-heart"></i>
             <i class="fa-solid fa-cart-shopping" id="slide"><span id="cartCount">0</span></i>
         </div>
     </nav>
+
+     <!-- navabar end here -->
+
+
     <div id="container">
         <div id="div"></div>
+
         <!-- right part of new page layout -->
+
         <div id="content">
             <a href="">Home / Men</a><br>
             <button id="BestSeller">Best Seller</button>
@@ -200,7 +350,7 @@
                 <i class="fa-sharp fa-solid fa-circle" style="color: wheat;"></i>
                 <i class="fa-sharp fa-solid fa-circle" style="color: #1b198f;"></i>
             </div>
-            <p>Select a size</p>
+            <p>Select a size</p>         
             
             <!-- size button part start here code -->
             <div id="cartButton"></div>
@@ -232,8 +382,10 @@
             </div>
         </div>
     </div>
+    <div id="cartWalaPart"></div>
 </body>
 </html>
+<script src="index.js"></script>
 <script>
     let product = [
         {
@@ -296,6 +448,60 @@
           "Category": "Women"
         }
     ];
+    // login part
+
+    let loginButton = document.getElementById("loginButton");
+    let mainForm = document.getElementById("mainForm");
+    let forms = document.getElementById("forms");
+    let nameInput = document.getElementById("name");
+    let emailInput = document.getElementById("email");
+    let passwordInput = document.getElementById("password");
+    let nameError = document.getElementById("nameError");
+    let emailError = document.getElementById("emailError");
+    let passwordError = document.getElementById("passwordError");
+    let closeButton = document.querySelector(".close");
+
+        loginButton.addEventListener("click", () => {
+            mainForm.style.display = "flex";
+        });
+
+        closeButton.addEventListener("click", () => {
+            mainForm.style.display = "none";
+        });
+
+        forms.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const validation = /^[A-Za-z0-9\._%+\-]+@[A-Za-z0-9\.\-]+\.[A-Za-z]{2,4}$/;
+
+            nameError.textContent = "";
+            emailError.textContent = "";
+            passwordError.textContent = "";
+
+            if (nameInput.value.trim() === "") {
+                nameError.textContent = "Name is required";
+            }
+
+            if (!validation.test(emailInput.value.trim())) {
+                emailError.textContent = "Email is not correct";
+            }
+
+            if (passwordInput.value.trim().length < 6) {
+                passwordError.textContent = "Password must be more than 6 characters";
+            }
+
+            if (nameError.textContent === "" && emailError.textContent === "" && passwordError.textContent === "") {
+                // Here you can place your login logic
+                alert("Thank you for logging in!");
+                nameInput.value = "";
+                emailInput.value = "";
+                passwordInput.value = "";
+                mainForm.style.display = "none";
+            }
+        });
+
+    // login part end here
+    
 
     let cartCount = document.getElementById("cartCount");
     let count = 0;
@@ -336,7 +542,7 @@
         addToCartBtn.innerText = "Add To Cart";
         addToCartBtn.addEventListener("click", () => {
             if (selectedSize) {
-                addInCart(product[0].Image, product[0].Price, product[0].Title);
+                addInCart(product[0].Image, product[0].Price);
                 updateCartCount(1);
             } else {
                 alert("Please select a size first.");
@@ -350,7 +556,7 @@
     // addToCart wala addToIn wala part start here
 
     
-    function addInCart(image, price, Title) {
+    function addInCart(image, price,Title) {
     let cartWalaParts = document.getElementById("cartWalaPart");
     let cart = document.createElement("div");
     cart.className = "RickyCarts";
@@ -359,19 +565,39 @@
         <img src="${image}" alt="">
     </div>
     <div class="cartDetails">
-        <button class="deleteButton" onclick="removeFromCart(this)">X</button>
-        <p>Title: ${Title}</p>
-        <p>Size: ${selectedSize}</p>
+        <p>Title:${Title}</p>
+        <p>Size:${selectedSize}</p>
         <p>$${price}</p>
+        <button class="decrementBtn">-</button>
+                <span class="quantity">0</span>
+                <button class="incrementBtn">+</button>      
     </div>
+
     `;
+    let decrementBtn = cart.querySelector('.decrementBtn');
+        decrementBtn.addEventListener('click', () => {
+            let quantityElem = cart.querySelector('.quantity');
+            let quantity = parseInt(quantityElem.innerText);
+            if (quantity > 0) {
+                quantity--;
+                quantityElem.innerText = quantity;
+            }
+        });
+        let incrementBtn = cart.querySelector('.incrementBtn');
+        incrementBtn.addEventListener('click', () => {
+            let quantityElem = cart.querySelector('.quantity');
+            let quantity = parseInt(quantityElem.innerText);
+            quantity++;
+            quantityElem.innerText = quantity;
+        });
+        
+    let deleteBtn=document.createElement("button")
+    deleteBtn.innerText="Delete"
+    deleteBtn.className="deleteBtn"
+    deleteBtn.addEventListener("click",()=>{
+        cart.remove();
+    })
+    cart.appendChild(deleteBtn)
     cartWalaParts.appendChild(cart);
 }
-
-function removeFromCart(btn) {
-    let cartItem = btn.parentNode.parentNode;
-    cartItem.parentNode.removeChild(cartItem);
-    updateCartCount(-1);
-}
-
 </script>
