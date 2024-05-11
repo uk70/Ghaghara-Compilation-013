@@ -47,7 +47,12 @@ wishList.addEventListener("click", function() {
 
 LoginButton.addEventListener("click", function() {
     if (isLoggedIn) {
-        alert("You are already logged in. Please logout to login again.");
+        //alert("You are already logged in. Please logout to login again.");
+        if(logoutContainer.style.display === "none"){
+            logoutContainer.style.display = "block"
+        }else{
+            logoutContainer.style.display = "none"
+        }
     } else {
         formContainer.style.display = "block";
     }
@@ -137,7 +142,7 @@ async function sendUserData(){
                 alert("Registered Successful");
                 signUpContainer.style.display = "none";
                 isLoggedIn = true;
-                logoutContainer.style.display = "block";
+                logoutContainer.style.display = "none";
                 userNameShow.innerText = `hello ${userName.value}`;
             }
             catch(err){
@@ -167,7 +172,7 @@ async function userLogin(){
                 alert("Login successful");
                 formContainer.style.display = "none";
                 isLoggedIn = true;
-                logoutContainer.style.display = "block";
+                logoutContainer.style.display = "none";
                 userNameShow.innerText = `hello ${found.username}`;
             } else {
                 alert("Please sign up first");

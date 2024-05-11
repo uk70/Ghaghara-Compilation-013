@@ -29,6 +29,12 @@
       "username": "vishal",
       "email": "vishal@gmail.com",
       "password": "vishal123"
+    },
+    {
+      "id": 6,
+      "username": "jouher",
+      "email": "jou@gmail.com",
+      "password": "jou1234"
     }
   ],
   "products": [

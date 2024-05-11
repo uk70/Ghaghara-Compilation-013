@@ -264,6 +264,7 @@ font-size: 18px;
 }
 #products-list{
     height: 63vh;
+    overflow: scroll;
 }
 #cart-bottom-part{
     background-color: #F9F9F9;
@@ -296,6 +297,7 @@ font-size: 18px;
     color: #555555;
 }
 #cart-total{
+    font-family: "Open Sans", sans-serif;
     font-weight: 600;
-    margin-right: 15px;
+    margin-right: 25px;
 }
