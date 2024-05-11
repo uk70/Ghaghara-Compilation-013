@@ -59,7 +59,6 @@
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
     let scontainer = document.getElementById("sk-container");
     let diveWomen = document.getElementById("diveWomen");
     let skk3 = document.getElementsByClassName("skk3");
@@ -102,16 +101,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     };
 
-    fetchData("http://localhost:3000/products");
+    fetchData("http://localhost:3000/products?gender=women");
 
     function appendData(data) {
   
-        let womenProducts = data.filter(item => item.gender === "women");
-         womenProducts.forEach((item) => {
+        // let womenProducts = data.filter(item => item.gender === "women");
+         data.forEach((item) => {
             let card = createCard(item);
             scontainer.append(card);
         });
     }
-});
-
 
