@@ -20,6 +20,7 @@ let logoutBtn = document.getElementById("logout-btn");
 let userNameShow = document.getElementById("user-name-show");
 let isLoggedIn = false;
 let uniqueId = 0;
+
 logoutBtn.addEventListener("click", function() {
     logoutUser();
 });
@@ -36,9 +37,7 @@ arrow.addEventListener("click", function() {
     cartContainer.style.display = "none";
 });
 
-wishList.addEventListener("click", function() {
-    formContainer.style.display = "block";
-});
+
 LoginButton.addEventListener("click", function() {
     if (isLoggedIn) {
         //alert("You are already logged in. Please logout to login again.");
@@ -123,6 +122,7 @@ async function sendUserData(){
                 });
                 alert("Registered Successful");
                 signUpContainer.style.display = "none";
+                formContainer.style.display = "none";
                 isLoggedIn = true;
                 logoutContainer.style.display = "none";
                 userNameShow.innerText = `hello ${userName.value}`;
@@ -259,6 +259,7 @@ function updateCarousel() {
     const offset = -cardIndex * cardWidth;
     carouselCards.style.transform = `translateX(${offset}px)`;
 }
+
 
 
 
