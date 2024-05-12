@@ -1,4 +1,5 @@
 
+
 // abdulla
 let container = document.querySelector("#container");
 let LoginButton = document.getElementById("login-icon");
@@ -267,7 +268,7 @@ function updateCarousel() {
 
 
 //  img 2 div
-
+// sanprit
 const carousel = document.querySelector(".carousel"),
 firstImg = carousel.querySelectorAll("img")[0],
 arrowIcons = document.querySelectorAll(".wrapper i");
@@ -341,3 +342,16 @@ carousel.addEventListener("touchmove", dragging);
 
 document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("touchend", dragStop);
+
+
+// abdulla
+
+
+
+
+
+
+
+
+
+

@@ -239,3 +239,13 @@ footer{
 .accessories p{
     font-weight: 600;
 }
+#search-container-input-product-page{
+    padding: 10px;
+    width: 310px;
+    border: 1px solid rgb(147, 147, 147);
+}
+#search-icon-productpage{
+    margin-right: 30px;
+    position: relative;
+    right: 30px;
+}

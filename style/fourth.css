@@ -1,203 +1,135 @@
-        /* first css start here */
-
-        .carousel {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-            background-color: rgb(249,249,249);
-            height: 900px;
-            
-        }
-        #firstText{
-          font-size:2.5rem ;
-          text-align: center;
-          margin: 69px;
-        }
-
-        .carousel-cards {
-            display: flex;
-            transition: transform 0.6s ease-in-out;
-        }
-
-        .cards {
-            display: flex;
-            gap: 20px;
-        }
-
-        .card {
-            width: 400px;
-            height: 600px;
-            background-color:white;           
-            font-size: 20px;
-            font-weight: 500;
-        }
-
-        img {
-            width: 400px;
-            height: auto;
-        }
-
-        .prev-btn,
-        .next-btn {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            padding: 10px;
-            border: none;
-            cursor: pointer;
-            z-index: 1;
-        }
-
-        .prev-btn {
-            left: 0;
-            
-            background-color: white;
-            border-radius: 50%;
-            
-            
-        }
-
-        .next-btn {
-           
-            background-color: white;
-            border-radius: 50%;
-            right: 0;
-        }
-        #i{
-          background-color: white;
-            color: black;
-            border-radius: 50%;
-            font-size: 1.8rem;
-
-        }
-        .move{
-          position: relative;
-          top: 160px;
-          left: 27px;
-        }
-        #shopNow{
-          position: relative;
-          top: 180px;
-          font-size: 2.2rem;
-          color: black;
-        }
-        span{
-          font-size: 0.8rem;
-          margin-left: 11px;
-        }
-
-        /* first css end here */
-
-
-        #main{
-            display: flex;
-            justify-content: space-between;
-            height: 800px;
-            margin-top: 100px;
-            
-        }
-        #rightText{
-            margin-left: 100px;
-            position: relative;
-            top: 40%;
-           
-        }
-        #leftImages {
-            display: flex;
-            gap: 30px;
-            width: 50%; 
-            height: 1000px;
-            margin-right: 40px;
-        }
-        .image-container {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-            
-        }
-        .image {
-            flex: 1;
-            background-size: cover; 
-            background-position: center;
-            font-size: 2rem;
-            color: beige;
-            text-align: center;
-           
-            
-        }
-        #p{
-            position: relative;
-            top: 399px;
-            right: 40px;
-            font-weight: 400;
-        }
-        #p1{
-            font-size: 3.8rem;
-        
-        }
-        #p2{
-            font-size: 2.26rem;
-            color: rgb(102,102,102);
-        }
-        a{
-            font-size: 2.4rem;
-            color: black;
-        }
-        /* first css end here */
-#main{
-    display: flex;
-    justify-content: space-between;
-    height: 800px;
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgb(249,249,249);
+    height: 900px;
     
 }
-#rightText{
-    margin-left: 100px;
-    position: relative;
-    top: 40%;
-   
+#firstText{
+  font-size:2.5rem ;
+  text-align: center;
+  margin: 69px;
 }
-#leftImages {
+
+.carousel-cards {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    width: 400px;
+    height: 600px;
+    background-color:white;           
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#imgs {
+    width: 400px;
+    height: auto;
+}
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.prev-btn {
+    left: 0;
+    
+    background-color: white;
+    border-radius: 50%;
+    
+    
+}
+
+.next-btn {
+   
+    background-color: white;
+    border-radius: 50%;
+    right: 0;
+}
+#i{
+  background-color: white;
+    color: black;
+    border-radius: 50%;
+    font-size: 1.8rem;
+
+}
+.move{
+  position: relative;
+  top: 160px;
+  left: 27px;
+}
+#shopNow{
+  position: relative;
+  top: 180px;
+  font-size: 2.2rem;
+  color: black;
+}
+#Basedspan{
+  font-size: 0.8rem;
+  margin-left: 11px;
+}
+
+/* first css end here */
+
+
+.rickyFourContainer {
     display: flex;
     gap: 30px;
-    width: 50%; 
-    height: 1000px;
-    margin-right: 40px;
-}
-.image-container {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    
-}
-.image {
-    flex: 1;
-    background-size: cover; 
-    background-position: center;
-    font-size: 2rem;
-    color: beige;
-    text-align: center;
-   
-    
-}
-#p{
-    position: relative;
-    top: 399px;
-    right: 40px;
-    font-weight: 400;
-}
-#p1{
-    font-size: 3.8rem;
+    height: auto;
 
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid black;
+    align-items: center;
 }
-#p2{
-    font-size: 2.26rem;
-    color: rgb(102,102,102);
+.textContainer {
+    width: 60%;
+    margin-left: 40px;
 }
-a{
-    font-size: 2.4rem;
+.pChild {
+    padding: 20px;
+}
+.pChild .desgineinCanada {
+    font-size: 2.6rem;
+}
+.pChild .ourPurpose {
+    font-size: 1.7rem;
+    color: rgb(104, 94, 94);
+}
+.imageContainer {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    width: 50%;
+    margin-left: 90px;
+}
+.fourImage {
+    width: 100%; 
+    height: 300px;
+    object-fit: cover; 
+    margin: 0; 
+    position: relative;
+}
+.whoWeAre{
+
+    font-size: 1.5rem;
     color: black;
 }
