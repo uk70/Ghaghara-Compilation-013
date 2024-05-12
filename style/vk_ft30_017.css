@@ -1,0 +1,253 @@
+#vk_container{
+    height: 100vh;
+     width: 100%;
+     background-color: black;
+ 
+ }
+ *{
+     margin: 0px;
+     padding: 0px;
+     box-sizing: border-box;
+ }
+ #vkgparent{
+     max-height: auto;
+  
+     width: 100%;
+     /* background-color: #fff; */
+     display: flex;
+     padding: 3%;
+    justify-content: space-around;
+    box-sizing: border-box;
+    padding-top: 0%;
+    padding-bottom: 0%;
+ 
+ }
+ .vk_topcard{
+     max-height:auto;
+     width: auto;
+     padding: 5%;
+     box-sizing: border-box;
+     /* padding-top: 0%; */
+     /* background-color:rgb(122, 21, 21); */
+ 
+ }
+ .vk_topcard span{
+     /* background-color: white; */
+     display: block;
+ }
+ .vk_topcard h3,p{
+     color: aliceblue;
+     text-align: center;
+     margin:20px;
+     line-height: 15%;
+     /* background-color: paleturquoise; */
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ span>svg,img{
+    margin-left: 25%;
+    
+     padding-left: 5%;
+     padding-top: 2%;
+ }
+ 
+ .vk_topcard:nth-child(4) span{
+   
+     
+     margin-top: 5% !important;
+   
+ 
+ }
+ .vk_topcard p{
+  margin-top: 15% !important;
+ }
+ /*  */
+ #vk_parent{
+     width: 100%;
+     height: 55%;
+     background-color: black;
+ }
+  #vk_lowcard{
+     height: 100%;
+     /* background-color: yellowgreen; */
+     display: flex;
+     justify-content: space-around;
+ 
+ } 
+ 
+ /* son1 */
+ #vk_son1{
+     height: 80%;
+     width: auto;
+     background-color:black;
+     margin-left: 0%;
+     padding: 2%;
+ 
+ }
+ #vk_son2{
+     height: 90%;
+     width: auto;
+     background-color:black;
+     margin-left: -0%;
+ }
+ #vk_son3{
+     height: 400px;
+     width: 300px;
+     /* background-color:orange; */
+    /* padding-left: -3%; */
+    color: azure;
+     box-sizing: border-box;
+ }
+ #vk_logo1{
+     display: block;
+     /* margin: 10%; */
+     margin-bottom: 10%;
+     margin-top: -50px;
+    
+ }
+ #vk_logo1 img{
+     height: 120px;
+     margin-left: 0%;
+ }
+ #vk_social{
+     /* display: flex; */
+       height: auto;
+       margin-left: 40px;
+     /* background-color: pink; */
+     width: auto;
+     /* margin: 1%; */
+     box-sizing: border-box;
+     width: 100%;
+     margin-top: -30px;
+     
+ }
+ 
+ 
+ #vk_social span {
+     font-size: 24px; /* Adjust the size as needed */
+     margin-right: 10px; 
+     padding: 4px;
+     box-sizing: border-box;
+     /* margin-left: 40px; */
+     color:#ffffff;/* Optional: Add some spacing between icons */
+ }
+ 
+ #vk_logo2 img{
+     height: 100px;
+     margin-left: -10%;
+ }
+ #vk_logo2 {
+     height: 100px;
+ 
+     margin-top: 40px !important;
+     margin-left: 40px
+ }
+ table {
+     width: 100%;
+     border-collapse: collapse;
+   }
+ 
+   th, td {
+     /* border: 1px solid black; */
+     padding: 8px;
+     text-align: center;
+     color: #f2f2f2;
+     text-align: left;
+ 
+   }
+ 
+   th {
+     background-color: black;
+   }
+   td:not(:last-child) {
+       margin-right: 20px;
+     }
+ 
+ 
+ #two_vk{
+     line-height: 100%;
+     /* background-color: red; */
+   text-align: left;
+   padding: 5%;
+   box-sizing: border-box;
+   margin-top: 10%;
+   font-size: 15px;
+ height: auto;
+ 
+ }
+ #vk_son3 button{
+     height: 10%;
+     width: 100%;
+     margin-top: 10%;
+     background-color: black;
+     color: azure;
+     border: 3px solid white;
+     font-size: 20px;
+ 
+     
+ }
+ #vk_inpt{
+     margin-top: 3%;
+     font-weight: 15%;
+     font-size: 20px;
+     color: #f2f2f2;
+ }
+ .box1{
+     width: 100%;
+     height: 40px;
+     /* padding: 2%; */
+     margin: 2%;
+     margin-left: -3px;
+     background-color: #1f2322;
+     box-sizing: border-box;
+ }
+ .box2_vk{
+    margin-top: 5%;
+    height: auto;
+    width: auto;
+    /* background-color: #fff; */
+ }
+ #two_vk{
+     margin-top: 5%;
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ .box1::placeholder {
+     color: white; /* Change placeholder color */
+ }
+ 
+ 
+ #vk_cpyright p{
+     /* background-color: blue; */
+     text-align: left;
+     padding-left: 5%;
+ }
+ 
+ 
+ 
+ 
+ .error-message {
+     color: red;
+     font-size: 12px;
+     margin-top: 5px;
+   }
+ 
+   .error-border {
+     border: 1px solid red;
+   }
+   .white-text {
+     color: white;
+   }
+
+   footer{
+    max-width: 1440px;
+    margin: auto;
+   }
+   
+   #vk_last{
+    color:aliceblue;
+    padding-left: 7%;
+   }
