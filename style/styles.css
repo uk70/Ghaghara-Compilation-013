@@ -1,3 +1,5 @@
+
+
 body{
     margin: 0;
 }
@@ -302,8 +304,115 @@ font-size: 18px;
     font-weight: 600;
     margin-right: 25px;
 }
+/*abdu  */
+/* sanprit */
+.ss{
+  border:2px solid transparent;
+  padding:20px;
+}
+.ss-para{
+  margin-top:15px;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+}
+.ss-grid{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:20px;
+}
+.ss-grid img{
+  width:100%;
+}
+.ss-grid p{
+  margin-top:10px;
+}
+.para-caraousel{
+  font-family: sans-serif;
+  margin:18px;
+  font-size: 25px;
+}
+.anker-div{
+  margin-top:20px;
+  border:2px solid transparent;
+  margin-left:90%;
+  font-size: 15px;
+}
+.anker-caraousel{
+  font-family: sans-serif;
+  margin:4px;
+  text-decoration: none;
+  color:black;
+}
 
 
+/* ss caraousel */
+
+/* Import Google font - Poppins */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.sp-container{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper{
+  display: grid;
+  width: 100%;
+  position: relative;
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: black;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  background: #fff;
+  line-height: 44px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  color:black;
+}
+.wrapper i:first-child{
+  left: -5px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -5px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: smooth;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 550px;
+  object-fit: contain;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 5);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+/* shreya */
 .sk{
   width:100%;
   display:flex;
@@ -573,5 +682,6 @@ font-size: 18px;
   object-fit: cover;
 }
 /* ****************MEN CARAOUSEL END************************** */
+
 
 
