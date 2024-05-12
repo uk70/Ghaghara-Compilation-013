@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* login part  */
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        #mainForm {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(7px); /* Apply a blur effect */
+    z-index: 10; /* Change this value */
+}
+
+
+
+        #forms {
+            position: relative;
+            width: 400px;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            opacity: 0.9;
+        }
+
+        #forms input {
+            display: block;
+            margin: 10px auto;
+            padding: 10px;
+            width: 80%;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        #forms label {
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+            color: #333;
+        }
+
+        #forms button {
+            background-color: black;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #forms button:hover {
+            background-color: #162017;
+        }
+
+        hr {
+            margin-top: 19px;
+            width: 80%;
+            opacity: 0.5;
+            color: #999;
+        }
+
+        .error {
+            color: red;
+            font-size: 12px;
+            text-align: left;
+            margin-top: 5px;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            color: #888;
+        }
+
+        /* login par end here */
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            height: 60px;
+            align-items: center;
+            border: 1px solid rgb(244, 238, 238);
+           
+        }
+        .nav1 {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+        }
+        .nav1 h3{
+            margin-left: 8px;
+        }
+        /* #frank{
+            height: 40px;
+        } */
+        .nav1 a {
+            text-decoration: none;
+            color: black;
+        }
+        .nav2 i {
+            font-size: 1.4rem;
+            margin-right: 44px;
+        }
+        #container {
+            display: flex;
+            gap: 15px;
+            
+        }
+        #div {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            width: 70%;
+            margin-top: 4px;
+        }
+        .imgs {
+            width: calc(50% - 15px); 
+        }
+        .imgs img {
+            width: 100%;
+            height: auto; 
+            object-fit: cover; 
+        }
+        #content {
+            width: 30%;
+            margin-top: 18px;
+        }
+        #content a{
+            color: black;
+
+        }
+        #content .p1{
+            font-size: 1.4rem;
+        }
+        #content .p3{
+            font-size: 0.7rem;
+        }
+        #BestSeller{
+            background-color: black;
+            color: white;     
+            padding: 0.7px;   
+            font-size: 10px;
+            margin-top: 10px;
+            width: 70px;
+
+        }
+        .colorIcons{
+            display: flex;
+            gap: 40px;
+            font-size: 1.7rem;
+        }
+        
+        .sizeButton {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-bottom: 12px;
+        }
+        .sizeButton button {
+            margin: 6px;
+            padding: 6px;
+            border: 0.1px solid rgb(216, 160, 160);
+            background-color: transparent;
+            cursor: pointer;
+        }
+        .sizeButton button:hover {
+            background-color: black;
+            color: white;
+        }
+        .addToCartBtn {
+            margin-top: 12px;
+            padding: 16px 24px;
+            width: 340px;
+            border: none;
+            background-color: black;
+            color: white;
+            cursor: pointer;
+        }
+        .addToCartBtn:hover {
+            background-color: #333;
+        }
+        #cartCount{
+            position: relative;
+            bottom: 15px;
+            font-size: 0.8rem;
+        }
+
+        .hrs{
+            margin-top: 40px;
+            opacity: 0.4;
+        }
+        .fit{
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .hrss{
+            opacity: 0.4;
+
+        }
+        .RickyCarts {
+    display: flex;
+    
+
+}
+
+.cartImage {
+    flex: 1;
+    margin-top: 4px;
+}
+
+.cartImage img {
+    height: 140px;
+}
+
+.cartDetails {
+    flex: 0;
+   
+    flex-direction: column;
+    /* justify-content: center; */
+    position: relative;
+    right: 180px;
+}
+#cartWalaPart{
+    margin-top: 16px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    height: auto;
+    width: 100%;
+
+}
+.deleteBtn{
+    height: 30px;
+    position: relative;
+    top: 10px;
+    right: 10px;
+    
+}
+.cartDetails hr{
+    width: 170px;
+}
+.horizental{
+    display: inline;
+}
+
+#slide {
+     transition: transform 0.5s ease-in-out;
+}
+
+ #slide:hover {
+      transform: rotate(360deg);
+     }
+
+    </style>
+</head>
+<body>
+    <!-- login part -->
+
+    <div id="mainForm">
+        
+        <form id="forms">
+            <!-- Use the correct icon class names -->
+            <p><i class="fas fa-party-horn"></i>Welcome Again <i class="fas fa-party-horn"></i></p>
+            <span class="close">&times;</span>
+            <div>
+                <hr>
+                <input type="text" id="name" placeholder="Enter your Name">
+                <span class="error" id="nameError"></span>
+            </div>
+
+            <div>
+                <hr>
+                <input type="email" id="email" placeholder="Enter your email id">
+                <span class="error" id="emailError"></span>
+            </div>
+
+            <div>
+                <hr>
+                <input type="password" id="password" placeholder="Enter your Password">
+                <span class="error" id="passwordError"></span>
+            </div>
+
+            <div>
+                <hr>
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- login part end here -->
+    <!-- nava bar start here -->
+
+    <nav>
+        <div class="nav1">
+            <h3>Frank And Oak</h3>
+            <a href="">Women</a>
+            <a href="">Men</a>
+            <a href="">Sell</a>
+            <a href="">Our story</a>
+        </div>
+        
+        <div class="nav2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-user-tie" id="loginButton"></i>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping" id="slide"><span id="cartCount">0</span></i>
+        </div>
+    </nav>
+
+     <!-- navabar end here -->
+
+
+    <div id="container">
+        <div id="div"></div>
+
+        <!-- right part of new page layout -->
+
+        <div id="content">
+            <a href="">Home / Men</a><br>
+            <button id="BestSeller">Best Seller</button>
+            <p class="p1">The Jasper Oxford Shirt in Medium Blue</p>
+            <p>$89.50</p>
+            <p class="p3">4 interest-free payments of $22.37 with Klarna. <a href="">Learn More</a></p>
+            <hr class="hrs">
+            <p>Color : </p>
+            <div class="colorIcons">
+                <i class="fa-sharp fa-solid fa-circle" style="color: #513e60;"></i>
+                <i class="fa-sharp fa-solid fa-circle"></i>
+                <i class="fa-sharp fa-solid fa-circle" style="color: #FFD43B;"></i>
+                <i class="fa-sharp fa-solid fa-circle" style="color: #63E6BE;"></i>
+                <i class="fa-sharp fa-solid fa-circle" style="color: wheat;"></i>
+                <i class="fa-sharp fa-solid fa-circle" style="color: #1b198f;"></i>
+            </div>
+            <p>Select a size</p>         
+            
+            <!-- size button part start here code -->
+            <div id="cartButton"></div>
+            <div id="cartWalaPart"></div>
+            <hr class="hrs">
+            <p>Overview</p>
+            <p class="p3">A wardrobe must-have. The Jasper shirt is made with Oxford cloth, a basket-weave fabric that is soft, sturdy, and breathable. 100% organic cotton. Regular fit. Buttoned point collar. Patch pocket at the chest. Recycled buttons.</p>
+            <div class="fit">
+                <h4>Fit & Sizing</h4>
+                <p>+</p>
+            </div>
+            <hr class="hrss">
+            <div class="fit">
+                <h4>Fit & Sizing</h4>
+                <p>+</p>
+            </div>
+            <hr class="hrss">
+            <div class="fit">
+                <h4>Fit & Sizing</h4>
+                <p>+</p>
+            </div>
+            <hr class="hrss">
+            <div class="fit">
+                <h4>Fit & Sizing</h4>
+                <p>+</p>
+            </div>
+            <hr class="hrss">
+
+            </div>
+        </div>
+    </div>
+    <div id="cartWalaPart"></div>
+</body>
+</html>
+<script src="index.js"></script>
+<script>
+    let product = [
+        {
+          "id": 1,
+          "Image": "https://www.frankandoak.com/cdn/shop/files/1110352-403.7643_1200x.jpg?v=1690985687",
+          "Hover_image": "https://www.frankandoak.com/cdn/shop/files/2940048-8BX.002_450x.jpg?v=1711049510",
+          "product-badge": "new",
+          "Title": "The Garment Dyed Dad Cap in Light Pink",
+          "Price": 29.5,
+          "Size": "L",
+          "Category": "Women"
+        },
+        {
+          "id": 2,
+          "Image": "https://www.frankandoak.com/cdn/shop/files/1110352-403.7652_1200x.jpg?v=1690985687",
+          "Hover_image": "https://www.frankandoak.com/cdn/shop/files/2220131-002.01_450x.jpg?v=1711051177",
+          "product-badge": "new",
+          "Title": "The Celine Bermuda Short in Black",
+          "Price": 89.5,
+          "Size": "XL",
+          "Category": "Women"
+        },
+        {
+          "id": 35,
+          "Image": "https://www.frankandoak.com/cdn/shop/files/1110352-403.7630_1200x.jpg?v=1690985687",
+          "Hover_image": "https://www.frankandoak.com/cdn/shop/files/2210557-2KW.02_450x.jpg?v=1707320155",
+          "Title": "The Classic Cargo Pant in Clay",
+          "Price": 79,
+          "Size": "S",
+          "Category": "Women"
+        },
+        {
+          "id": 43,
+          "Image": "https://www.frankandoak.com/cdn/shop/files/1110352-403.7638_1200x.jpg?v=1690985687",
+          "Hover_image": "https://www.frankandoak.com/cdn/shop/files/2980031-5B0.02_450x.jpg?v=1706729060",
+          "product-badge": "new",
+          "Title": "The Aero Cross Body Bag in Boreal Green",
+          "Price": 98,
+          "Size": "XS",
+          "Category": "Women"
+        },
+        {
+          "id": 48,
+          "Image": "https://www.frankandoak.com/cdn/shop/files/1110352-403.7625_1200x.jpg?v=1690985687",
+          "Hover_image": "https://www.frankandoak.com/cdn/shop/files/2510406-002.02_450x.jpg?v=1694196583",
+          "product-badge": "best seller",
+          "Title": "The Flex Camp Collar Dress in Black",
+          "Price": 84,
+          "Size": "XXL",
+          "Category": "Women"
+        },
+        {
+          "id": 48,
+          "Image": "https://www.frankandoak.com/cdn/shop/files/1110352-403.9339_1200x.jpg?v=1690985587",
+          "Hover_image": "https://www.frankandoak.com/cdn/shop/files/2510406-002.02_450x.jpg?v=1694196583",
+          "product-badge": "best seller",
+          "Title": "The Flex Camp Collar Dress in Black",
+          "Price": 84,
+          "Size": "M",
+          "Category": "Women"
+        }
+    ];
+    // login part
+
+    let loginButton = document.getElementById("loginButton");
+    let mainForm = document.getElementById("mainForm");
+    let forms = document.getElementById("forms");
+    let nameInput = document.getElementById("name");
+    let emailInput = document.getElementById("email");
+    let passwordInput = document.getElementById("password");
+    let nameError = document.getElementById("nameError");
+    let emailError = document.getElementById("emailError");
+    let passwordError = document.getElementById("passwordError");
+    let closeButton = document.querySelector(".close");
+
+        loginButton.addEventListener("click", () => {
+            mainForm.style.display = "flex";
+        });
+
+        closeButton.addEventListener("click", () => {
+            mainForm.style.display = "none";
+        });
+
+        forms.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const validation = /^[A-Za-z0-9\._%+\-]+@[A-Za-z0-9\.\-]+\.[A-Za-z]{2,4}$/;
+
+            nameError.textContent = "";
+            emailError.textContent = "";
+            passwordError.textContent = "";
+
+            if (nameInput.value.trim() === "") {
+                nameError.textContent = "Name is required";
+            }
+
+            if (!validation.test(emailInput.value.trim())) {
+                emailError.textContent = "Email is not correct";
+            }
+
+            if (passwordInput.value.trim().length < 6) {
+                passwordError.textContent = "Password must be more than 6 characters";
+            }
+
+            if (nameError.textContent === "" && emailError.textContent === "" && passwordError.textContent === "") {
+                // Here you can place your login logic
+                alert("Thank you for logging in!");
+                nameInput.value = "";
+                emailInput.value = "";
+                passwordInput.value = "";
+                mainForm.style.display = "none";
+            }
+        });
+
+    // login part end here
+    
+
+    let cartCount = document.getElementById("cartCount");
+    let count = 0;
+    let selectedSize = null;
+
+    function displayImg() {
+        let div = document.getElementById("div");
+        product.forEach(ele => {
+            let inner = document.createElement("div");
+            inner.className = "imgs";
+            inner.innerHTML = `<img src="${ele.Image}" alt="">`;
+            div.appendChild(inner);
+        });
+    }
+    displayImg();
+
+    function updateCartCount(change) {
+        count += change;
+        cartCount.innerText = count;
+    }
+
+    function sizeButton(product) {
+        let cartButton = document.getElementById("cartButton");
+        let sizeButtonDiv = document.createElement("div");
+        sizeButtonDiv.className = "sizeButton";
+        product.forEach(ele => {
+            let button = document.createElement("button");
+            button.textContent = ele.Size;
+            button.addEventListener("click", () => {
+                selectedSize = ele.Size;
+            });
+            sizeButtonDiv.appendChild(button);
+        });
+        cartButton.appendChild(sizeButtonDiv);
+
+        let addToCartBtn = document.createElement("button");
+        addToCartBtn.className = "addToCartBtn";
+        addToCartBtn.innerText = "Add To Cart";
+        addToCartBtn.addEventListener("click", () => {
+            if (selectedSize) {
+                addInCart(product[0].Image, product[0].Price);
+                updateCartCount(1);
+            } else {
+                alert("Please select a size first.");
+            }
+        });
+        cartButton.appendChild(addToCartBtn);
+    }
+    sizeButton(product);
+
+
+    // addToCart wala addToIn wala part start here
+
+    
+    function addInCart(image, price,Title) {
+    let cartWalaParts = document.getElementById("cartWalaPart");
+    let cart = document.createElement("div");
+    cart.className = "RickyCarts";
+    cart.innerHTML = `
+    <div class="cartImage">
+        <img src="${image}" alt="">
+    </div>
+    <div class="cartDetails">
+        <p>Title:${Title}</p>
+        <p>Size:${selectedSize}</p>
+        <p>$${price}</p>
+        <button class="decrementBtn">-</button>
+                <span class="quantity">0</span>
+                <button class="incrementBtn">+</button>      
+    </div>
+
+    `;
+    let decrementBtn = cart.querySelector('.decrementBtn');
+        decrementBtn.addEventListener('click', () => {
+            let quantityElem = cart.querySelector('.quantity');
+            let quantity = parseInt(quantityElem.innerText);
+            if (quantity > 0) {
+                quantity--;
+                quantityElem.innerText = quantity;
+            }
+        });
+        let incrementBtn = cart.querySelector('.incrementBtn');
+        incrementBtn.addEventListener('click', () => {
+            let quantityElem = cart.querySelector('.quantity');
+            let quantity = parseInt(quantityElem.innerText);
+            quantity++;
+            quantityElem.innerText = quantity;
+        });
+        
+    let deleteBtn=document.createElement("button")
+    deleteBtn.innerText="Delete"
+    deleteBtn.className="deleteBtn"
+    deleteBtn.addEventListener("click",()=>{
+        cart.remove();
+    })
+    cart.appendChild(deleteBtn)
+    cartWalaParts.appendChild(cart);
+}
+</script>
