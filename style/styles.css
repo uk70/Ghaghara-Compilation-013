@@ -1,0 +1,687 @@
+
+
+body{
+    margin: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shojumaru&family=Signika:wght@300..700&display=swap');
+#head-container{
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    height: 7vh;
+}
+.head-left{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.head-left>div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+}
+#redirection-product{
+  font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+    color: black;
+    text-decoration: none;
+}
+.head-left h4{
+    font-weight: 900;
+    font-size: 19px;
+    margin-right: 40px;
+    margin-left: 40px;
+    font-family: "Open Sans", sans-serif;
+}
+.head-right{
+    margin-right: 20px;
+}
+.head-right i{
+    font-weight: 100px;
+    margin-right: 30px;
+    font-size: 18px;
+}
+#search-container{
+    display: none; 
+    position: absolute;
+    top: 6%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+    width: 100%;
+    z-index: 1;
+}
+#search-container-input{
+    width: 70%;
+    padding: 18px;
+    border: none;
+}
+#search-container-input::placeholder {
+    font-size: 18px;
+}
+#search-container-input:focus {
+    outline: none;
+}
+#search-icon-container{
+  position: absolute;
+  top: 18px;
+right: 60px;
+font-size: 18px;
+}
+#close-icon-search{
+    float: right;
+    position: absolute;
+    top: 13px;
+  right: 10px;
+}
+.image-container{
+    position: relative;
+}
+#headImage{
+  width: 100%;
+  height: 90vh;
+}
+.image-container-middle{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  color: white;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.image-container-middle h1{
+    font-size: 50px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    margin: 10px;
+}
+.image-container-middle h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+.image-container-middle span{
+    padding: 13px 50px 13px 50px;
+    border: 2px solid white;
+    background-color: none;
+    margin-right: 20px;
+    margin-left: 10px;
+    font-size: 19px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+.third-section-abdulla{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    color: white;
+    margin-top: -5px;
+    height: 7vh;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+}
+.third-section-abdulla i{
+    margin-right: 10px;
+}
+#form-container{
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: 40%;
+      z-index: 1;
+}
+.form-container-heading{
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+}
+.main-form>input{
+    display: block;
+    width: 90%;
+    margin: 20px 0px 20px 0px;
+    padding: 15px;
+    border: 1px solid rgb(173, 173, 173);
+}
+#signup-button{
+    width: 95%;
+    background-color: #000000;
+    padding: 15px;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+#signup-button-2{
+    width: 95%;
+    background-color: #000000;
+    padding: 15px;
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+.create-account{
+    text-align: center;
+}
+.create-account span{
+    text-decoration: underline;
+    color: #555555;
+}
+#form-container-signup{
+      display: none;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      border: 1px solid #ccc;
+      padding: 20px;
+      width: 40%;
+      z-index: 1;
+}
+#logout-container{
+    display: none;
+      position: absolute;
+      top: 10%;
+      left: 90%;
+      transform: translate(-50%, -50%);
+      border: 1px solid #ccc;
+      padding: 20px;
+      z-index: 1;
+    background-color: #000000;
+    color: white;
+    height: 10vh;
+     width: 200px;
+}
+#user-name-show{
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+#logout-container p:nth-child(1) {
+    text-align: center;
+    padding: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+#logout-container p:nth-child(2) {
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+}
+
+.cross-icon{
+   float: right;
+   font-size: 25px;
+}
+#cart-container{
+     background-color: #ffffff;
+     height: auto;
+      display: none;
+      position: absolute;
+      top: 7%;
+      right: 0;
+      border: 1px solid #ccc;
+      width: 40%;
+      z-index: 1;
+}
+.cart-container-head{
+    background-color: #F9F9F9;
+    height: 7vh;
+}
+.cart-container-head div{
+    padding: 19px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+}
+.cart-container-head div i{
+    margin-right: 10px;
+}
+.cart-container-scnd{
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+#products-list{
+    height: 63vh;
+    overflow: scroll;
+}
+#cart-bottom-part{
+    background-color: #F9F9F9;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 20px;
+}
+.cart-container-third{
+    display: flex;
+    justify-content: space-between;
+}
+#cart-container-button{
+    width: 100%;
+    padding: 16px;
+    border: none;
+    background-color: rgb(126, 126, 126);
+    font-size: 18px;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 200;
+}
+#cart-container-button i{
+    margin-left: 10px;
+}
+#cart-subTotal{
+    color: #000000;
+    font-weight: 500;
+    font-family: "Open Sans", sans-serif;
+}
+#cart-subTotal span{
+    color: #555555;
+}
+#cart-total{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    margin-right: 25px;
+}
+/*abdu  */
+/* sanprit */
+.ss{
+  border:2px solid transparent;
+  padding:20px;
+}
+.ss-para{
+  margin-top:15px;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+}
+.ss-grid{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:20px;
+}
+.ss-grid img{
+  width:100%;
+}
+.ss-grid p{
+  margin-top:10px;
+}
+.para-caraousel{
+  font-family: sans-serif;
+  margin:18px;
+  font-size: 25px;
+}
+.anker-div{
+  margin-top:20px;
+  border:2px solid transparent;
+  margin-left:90%;
+  font-size: 15px;
+}
+.anker-caraousel{
+  font-family: sans-serif;
+  margin:4px;
+  text-decoration: none;
+  color:black;
+}
+
+
+/* ss caraousel */
+
+/* Import Google font - Poppins */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.sp-container{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper{
+  display: grid;
+  width: 100%;
+  position: relative;
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: black;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  background: #fff;
+  line-height: 44px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  color:black;
+}
+.wrapper i:first-child{
+  left: -5px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -5px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: smooth;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 550px;
+  object-fit: contain;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 5);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+/* shreya */
+.sk{
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  padding:32px;
+  background-color: #f9f9f9;
+}
+.sk1{
+  width:68%;
+  height:669px;
+  background-image: url(https://www.frankandoak.com/cdn/shop/files/Rectangle_35_2160x.jpg?v=1714414024);
+  background-position: center;
+  background-size: cover;
+}
+.sk2{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  padding:105px;
+  width:50%;
+}
+.sk3 h2{
+  font-family: sans-serif;
+  font-weight: 400px;
+}
+.sk3 p{
+  font-size: 20px;
+  line-height: 70px;
+  color: #787878 ;
+  font-family: sans-serif;
+}
+.sk3 a{
+  color : black;
+  font-family: sans-serif;
+  line-height: 23px;
+  font-size: 18px;
+  line-height: 70px;
+
+}
+/* MEN */
+.skk{
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  padding:32px;
+  background-color: #f9f9f9;
+  box-sizing: border-box;
+}
+.skk1{
+  width:68%;
+  height:669px;
+  background-image: url(https://www.frankandoak.com/cdn/shop/files/Rectangle_34_2160x.jpg?v=1714414024);
+  background-position: center;
+  background-size: cover;
+}
+.skk2{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  padding:90px;
+  width:50%
+}
+.skk3 h2{
+  font-family: sans-serif;
+  font-weight: 400px;
+  line-height: 40px;
+}
+.skk3 p{
+  font-size: 20px;
+  line-height: 70px;
+  color: #787878 ;
+  font-family: sans-serif;
+}
+.skk3 a{
+  color : black;
+  font-family: sans-serif;
+  line-height: 70px;
+  font-size: 18px;
+
+}
+/* ********************WOMEN CARAOUSEL***********************/
+.caraousel-container{
+  max-width: 1200px;
+  width:80%;
+  border:2px solid transparent;
+}
+.sk-caraousel{
+  position: relative;
+}
+.sk-caraousel .slide-button{
+  position: absolute;
+  top:51%;
+  height:35px;
+  width:35px;
+  color:black;
+  background: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  border:none;
+  outline:none;
+  transform: translateY(-50%);
+}
+.sk-caraousel .slide-button#prev-slide{
+  left:7px;
+  display: none;
+}
+.sk-caraousel .slide-button#next-slide{
+  right:7px;
+}
+.sk-caraousel .sk-cimage{
+  display:grid;
+  gap : 8px;
+  margin-bottom:30px;
+  grid-template-columns: repeat(5, 1fr);
+  overflow-x: auto;
+  font-size:0;
+  scrollbar-width: none;
+}
+.sk-caraousel .sk-cimage::-webkit-scrollbar{
+  display:none;
+}
+.caraousel-container .slider-scrollbar{
+  height:-24px;
+  width:100%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+.sk-images{
+  width:200px;
+  height:200px;
+}
+.slider-scrollbar .scrollbar-track{
+  height:2px;
+  width:100%;
+  background: #ccc;
+  position: relative;
+  border-radius: 4px;
+} 
+ .slider-scrollbar:hover .scrollbar-track{
+  height:4px;
+}
+.slider-scrollbar .scrollbar-thumb:active{
+  cursor:grabbing;
+  height:8px;
+  top:-2px;
+
+}
+.slider-scrollbar .scrollbar-thumb{
+  height:100%;
+  position: absolute;
+  width:50%;
+  background: #000;
+  border-radius: inherit;
+  cursor:grab;
+  display: none;
+} 
+ .slider-scrollbar .scrollbar-thumb::after{
+  position: absolute;
+  left:0;
+  right:0;
+  top:-10px;
+  bottom:-10px;
+ 
+}
+.sk-caraousel .sk-cimage .sk-images{
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+}
+/* ********************WOMEN CARAOUSEL END***********************/
+
+/* ****************MEN CARAOUSEL************************** */
+
+.caraousel-container-men{
+  max-width: 1200px;
+  width:80%;
+  border:2px solid transparent;
+}
+.sk-caraousel-men{
+  position: relative;
+}
+.sk-caraousel-men .slide-button{
+  position: absolute;
+  top:51%;
+  height:35px;
+  width:35px;
+  color:black;
+  background: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 50%;
+  border:none;
+  outline:none;
+  transform: translateY(-50%);
+}
+.sk-caraousel-men .slide-button#prev-slide-men{
+  left:7px;
+  display: none;
+}
+.sk-caraousel-men .slide-button#next-slide-men{
+  right:7px;
+}
+.sk-caraousel-men .sk-cimage{
+  display:grid;
+  gap : 8px;
+  margin-bottom:30px;
+  grid-template-columns: repeat(5, 1fr);
+  overflow-x: auto;
+  font-size:0;
+  scrollbar-width: none;
+}
+.sk-caraousel-men .sk-cimage::-webkit-scrollbar-men{
+  display:none;
+}
+.caraousel-container-men .slider-scrollbar-men{
+  height:-24px;
+  width:100%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  display: none;
+}
+.sk-images{
+  width:200px;
+  height:200px;
+}
+.slider-scrollbar-men .scrollbar-track-men{
+  height:2px;
+  width:100%;
+  background: #ccc;
+  position: relative;
+  border-radius: 4px;
+} 
+ .slider-scrollbar-men:hover .scrollbar-track-men{
+  height:4px;
+}
+.slider-scrollbar-men .scrollbar-thumb-men:active{
+  cursor:grabbing;
+  height:8px;
+  top:-2px;
+
+}
+.slider-scrollbar-men .scrollbar-thumb-men{
+  height:100%;
+  position: absolute;
+  width:50%;
+  background: #000;
+  border-radius: inherit;
+  cursor:grab;
+  display: none;
+} 
+ .slider-scrollbar-men .scrollbar-thumb-men::after{
+  content:"";
+  position: absolute;
+  left:0;
+  right:0;
+  top:-10px;
+  bottom:-10px;
+ 
+}
+.sk-caraousel-men .sk-cimage .sk-images{
+  width: 150px;
+  height: 200px;
+  object-fit: cover;
+}
+/* ****************MEN CARAOUSEL END************************** */
+
+
+
