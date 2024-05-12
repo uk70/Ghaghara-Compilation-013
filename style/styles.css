@@ -571,3 +571,234 @@ font-size: 18px;
 /* ****************MEN CARAOUSEL END************************** */
 
 
+/* img 2 nd div */
+
+
+/* Import Google font - Poppins */
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.sp-container{
+  display: grid;
+  padding: 0 35px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper{
+  display: flex;
+  max-width: 1600px;
+  position: relative;
+}
+.wrapper i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  background: #f2f2f2;
+}
+.wrapper i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 550px;
+  object-fit: contain;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 5);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 2);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+ }
+}
+.ss{
+  border:2px solid transparent;
+  padding:20px;
+}
+.ss-para{
+  margin-top:15px;
+  margin-bottom: 50px;
+  font-family: sans-serif;
+}
+.ss-grid{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:20px;
+}
+.ss-grid img{
+  width:100%;
+}
+.ss-grid p{
+  margin-top:10px;
+}
+.para-caraousel{
+  font-family: sans-serif;
+  margin:18px;
+  font-size: 25px;
+}
+.anker-div{
+  margin-top:20px;
+  border:2px solid transparent;
+  margin-left:90%;
+  font-size: 15px;
+}
+.anker-caraousel{
+  font-family: sans-serif;
+  margin:4px;
+  text-decoration: none;
+  color:black;
+}
+
+
+/* ss caraousel */
+
+/* Import Google font - Poppins */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.sp-container{
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper{
+  display: grid;
+  width: 100%;
+  position: relative;
+}
+.wrapper i{
+  top: 30%;
+  height: 44px;
+  width: 44px;
+  color: black;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  background: #fff;
+  line-height: 44px;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper i:hover{
+  color:black;
+}
+.wrapper i:first-child{
+  left: -5px;
+  display: none;
+}
+.wrapper i:last-child{
+  right: -5px;
+}
+.wrapper .carousel{
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: smooth;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  height: 550px;
+  object-fit: contain;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 5);
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+#img1{
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+#space{
+  justify-content: space-between;
+  display: flex;
+}
+#margin{
+  margin-right: 45px;
+  margin-top: 9px;
+}
+button{
+  background-color: white;
+  border: white;
+}
+.image-container {
+  position: relative;
+}
+
+.navigation-arrows {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1; /* Ensures arrows are above images */
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
