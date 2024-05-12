@@ -1,135 +1,143 @@
-.carousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    background-color: rgb(249,249,249);
-    height: 900px;
-    
-}
-#firstText{
-  font-size:2.5rem ;
-  text-align: center;
-  margin: 69px;
-}
+/* first css start here */
+        /* #rickyMain{
+            /* margin: auto;
+            width: 1800px; */
+         */
 
-.carousel-cards {
-    display: flex;
-    transition: transform 0.6s ease-in-out;
-}
+        .carousel {
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            background-color: rgb(7, 6, 6);
+            height: 600px;
+            
+        }
+        #firstText{
+          font-size:2.5rem ;
+          text-align: center;
+          margin: 69px;
+        }
 
-.cards {
-    display: flex;
-    gap: 20px;
-}
+        .carousel-cards {
+            display: flex;
+            transition: transform 0.6s ease-in-out;
+        }
 
-.card {
-    width: 400px;
-    height: 600px;
-    background-color:white;           
-    font-size: 20px;
-    font-weight: 500;
-}
+        .cards {
+            display: flex;
+            gap: 20px;
+        }
 
-#imgs {
-    width: 400px;
-    height: auto;
-}
+        .rk-card {
+            width: 400px;
+            height: 600px;
+            background-color:white;           
+            font-size: 20px;
+            font-weight: 500;
+        }
 
-.prev-btn,
-.next-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    z-index: 1;
-}
+        .rk-carasoleImages {
+            width: 400px;
+            height: auto;
+        }
 
-.prev-btn {
-    left: 0;
-    
-    background-color: white;
-    border-radius: 50%;
-    
-    
-}
+        .prev-btn,
+        .next-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            z-index: 1;
+        }
 
-.next-btn {
-   
-    background-color: white;
-    border-radius: 50%;
-    right: 0;
-}
-#i{
-  background-color: white;
-    color: black;
-    border-radius: 50%;
-    font-size: 1.8rem;
+        .prev-btn {
+            left: 0;
+            
+            background-color: white;
+            border-radius: 50%;
+            
+            
+        }
 
-}
-.move{
-  position: relative;
-  top: 160px;
-  left: 27px;
-}
-#shopNow{
-  position: relative;
-  top: 180px;
-  font-size: 2.2rem;
-  color: black;
-}
-#Basedspan{
-  font-size: 0.8rem;
-  margin-left: 11px;
-}
+        .next-btn {
+           
+            background-color: white;
+            border-radius: 50%;
+            right: 0;
+        }
+        #io{
+          background-color: white;
+            color: black;
+            border-radius: 50%;
+            font-size: 1.8rem;
 
-/* first css end here */
+        }
+        .move{
+          position: relative;
+          top: 160px;
+          left: 27px;
+        }
+        #shopNow{
+          position: relative;
+          top: 180px;
+          font-size: 2.2rem;
+          color: black;
+        }
+        span{
+          font-size: 0.8rem;
+          margin-left: 11px;
+        }
 
+        /* first css end here */
 
-.rickyFourContainer {
-    display: flex;
-    gap: 30px;
-    height: auto;
+        /* secont css start here */
 
-    margin-left: 10px;
-    margin-right: 10px;
-    border: 2px solid black;
-    align-items: center;
-}
-.textContainer {
-    width: 60%;
-    margin-left: 40px;
-}
-.pChild {
-    padding: 20px;
-}
-.pChild .desgineinCanada {
-    font-size: 2.6rem;
-}
-.pChild .ourPurpose {
-    font-size: 1.7rem;
-    color: rgb(104, 94, 94);
-}
-.imageContainer {
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    width: 50%;
-    margin-left: 90px;
-}
-.fourImage {
-    width: 100%; 
-    height: 300px;
-    object-fit: cover; 
-    margin: 0; 
-    position: relative;
-}
-.whoWeAre{
+        .rickyFourContainer {
+            display: flex;
+            gap: 30px;
+            height: auto;
 
-    font-size: 1.5rem;
-    color: black;
-}
+            margin-left: 10px;
+            margin-right: 10px;
+            align-items: center;
+            margin-top: 40px;
+        }
+        .textContainer {
+            width: 60%;
+            margin-left: 40px;
+        }
+        .pChild {
+            padding: 20px;
+        }
+        .pChild .desgineinCanada {
+            font-size: 2.6rem;
+        }
+        .pChild .ourPurpose {
+            font-size: 1.7rem;
+            color: rgb(104, 94, 94);
+        }
+        .imageContainer {
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            width: 50%;
+            margin-left: 50px;
+        }
+        .fourImage {
+            width: 100%; 
+            height: 300px;
+            object-fit: cover; 
+            margin: 0; 
+            position: relative;
+           
+        }
+        .whoWeAre{
+
+            font-size: 1.5rem;
+            color: black;
+        }
