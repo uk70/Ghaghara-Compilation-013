@@ -1,5 +1,7 @@
 {
-    "users": [
+
+   "users": [
+
     {
       "id": 1,
       "username": "abdulla",
@@ -35,6 +37,12 @@
       "username": "jouher",
       "email": "jou@gmail.com",
       "password": "jou1234"
+    },
+    {
+      "id": 7,
+      "username": "john",
+      "email": "john1@gmail.com",
+      "password": "john1234"
     }
   ],
   "products": [
@@ -424,4 +432,8 @@
       "image": "https://www.frankandoak.com/cdn/shop/files/1210528-2EO.1130_1200x.jpg?v=1708370566"
     }
   ]
+
 }
+
+
+
