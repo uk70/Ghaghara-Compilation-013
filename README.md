@@ -1,16 +1,17 @@
 # Ghaghara-Compilation-013
-# Frank And Oak
-# Introduction
-The project "Frank And Oak" was a collaborative endeavor led by a team of five members: Vishal Kumar, Shreya Khushwaha, Abdulla Abdul Azeez, Ricky Kumar, and Sanpreet.Frank And Oak was founded in Montreal in 2012, with a mission to create an apparel brand that would speak to a new generation of creatives and entrepreneurs.
-What once started as a favourite in Montreal’s Mile End quickly blossomed into one of Canada’s leading lifestyle brands and digital retailers.
-A certified B Corp, Frank And Oak is now a leader in sustainable fashion and using innovative fabrics from nature to make products that are thoughtfully designed to help you live better, enjoy more, and feel good in everything you wear.
-# Project Type: Frontend | Backend
-For the "Frank And Oak" project, we tackled both frontend and backend development. Our focus encompassed crafting user-centric interfaces and robust backend functionalities. we demonstrated proficiency in both frontend and backend technologies, emphasizing our commitment to delivering comprehensive solutions.
 
-## Deplolyed App
-- Frontend: [Frank And Oak](https://frankandoak.com)
-- Backend: [Frank And Oak API](https://api.frankandoak.com)
-- Database: MongoDB Atlas
+### Frank And Oak
+
+Frank And Oak is an online fashion retailer that offers stylish and sustainable clothing for men and women.They offer a wide range of apparel and accessories, including tops, bottoms, outerwear, shoes, and more. Frank And Oak also provides personalized shopping experiences through features like their "Style Plan" subscription service, which delivers curated clothing selections to customers based on their preferences. Additionally, the website features blog content, style tips, and community engagement to enhance the overall shopping experience.
+
+### Project Type
+
+Frontend | Backend
+
+### Deployed Link
+
+Frank And Oak: [Live Demo]()
+
 ## Directory Structure
 my-app/
 ├─ backend/
@@ -30,51 +31,93 @@ my-app/
 │ ├─ product.js
 │ ├─ script.js
 │ ├─ wishlist.js
+     
+### Video Walkthrough of the project
 
-## Video Walkthrough of the project
-[Attach a very short video walkthrough of all features, 1 - 3 minutes]
+-[Presentation Link](https://youtu.be/zu-94FmTdys)
 
-## Video Walkthrough of the codebase
-[Attach a very short video walkthrough of the codebase, 1 - 5 minutes]
+### Screenshots
 
-## Features
-- Signup and login functionality
-- Full-fledged cart with add, remove, and update features
-- Search functionality for products
-- Carousel feature for product display
+*Landing Page*
 
-## Design Decisions or Assumptions
-- Utilized a minimalist design approach for better user experience
-- Assumed users are familiar with standard e-commerce functionalities
-
-## Installation & Getting Started
-```bash
-npm install Ghaghara-Compilation-013
-cd Ghaghara-Compilation-013
-npm start
+<img src="/Ghaghara-Compilation-013/Website image/Landing Page.jpg" alt="">
 
 
-#Usage
-To use the Frank And Oak e-commerce platform, follow these steps:
+*Login and Signup Page*
 
-Visit Frank And Oak.
-Sign up for an account or log in if you already have one.
-Browse through the available products.
-Add desired items to your cart.
-Proceed to checkout and complete your purchase.
-Credentials
-For authenticated pages, use the following credentials:
+  <img src="/Ghaghara-Compilation-013/Website image/Sign up .jpg" alt="">
 
-Username: [Your username]
-Password: [Your password]
-APIs Used
-The Frank And Oak e-commerce platform relies on JSON for data exchange.
 
-API Endpoints
-GET /api/items: Retrieve all items
-POST /api/items: Create a new item
-Technology Stack
-Node.js
-Express.js
-MongoDB
-Other libraries/modules
+*Card Page*
+
+<img src="/Ghaghara-Compilation-013/Website images/Product Page.jpg" alt="">
+
+*Product Detail Page*
+
+
+<img src="/Ghaghara-Compilation-013/Website images/Product Details.jpg" alt="">
+
+*Cart Page*
+
+
+<img src="/Ghaghara-Compilation-013/Website images/Add to cart.jpg" alt="">
+
+
+### Features
+
+- *Login and Signup*: "Effortlessly access exclusive deals by logging in or sign up for personalized shopping experiences.
+- *Cart*: Keep track of your favorite deals and products with our convenient cart feature.
+- *Product Details Page*:Explore comprehensive information and make informed decisions on our product details page.
+- *Search bar*: Easily find the deals you love with our intuitive search bar.
+- *carousel*:Discover a dynamic showcase of featured deals with our engaging carousel.
+
+### Tech Stack
+
+- *HTML*: Provides the structure and content for the web page.
+- *CSS*: Handles the UI and styling, ensuring an appealing visual presentation.
+- *Javascript*:JavaScript empowers dynamic and interactive web experiences through its versatile scripting capabilities.
+- *Json Server*:JSON Server simplifies backend development by allowing you to quickly create a REST API with JSON data, streamlining your development process and enabling rapid prototyping.
+
+### Design Elements
+
+- *Interactive*: Card will increase in sized in a smooth way when curser hover them.
+
+- *Carousel*: A responsive slideshow for cycling images or text, with controls and indicators.
+
+- *Flex and Grid*: Many of the elements takes the benefits of display flex and display grid to provide more control over the deferent layout in different sections of website.
+
+- *Fonts & Icons*: Integrates Google Fonts and FontAwesome icons for enhanced visual elements. By leveraging these resources, the website achieves a modern and visually appealing design, improving readability and user engagement.
+
+
+### How to Use
+
+To run this project locally:
+
+1. Clone this repository to your local machine.
+2. Open the index.html file in your preferred web browser.
+3. Explore Frank And Oak experience right from your device.
+
+### Contributors
+
+- [Vishal Kumar](https://github.com/uk70)
+- [Abdulla Abdul Azeez](https://github.com/Abdullaabdulazeez)
+- [Ricky Kumar](https://github.com/Rickykumar010)
+- [Sanpreet Singh](https://github.com/Sanpreet0415)
+- [Shreya Kushwaha](https://github.com/shreya-kushwaha40)
+
+### Acknowledments
+
+- Inspired by the original Frank And Oak website.
+- Special thanks to our dedicated team for their invaluable contributions to Frank And Oak, and to our mentor/IA Ritesh Ranjan Sir
+
+
+
+
+
+
+
+
+
+
+
+
