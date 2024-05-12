@@ -50,17 +50,17 @@ my-app/
 
 *Card Page*
 
-<img src="/Ghaghara-Compilation-013/Website images/Product Page.jpg" alt="">
+<img src="/Ghaghara-Compilation-013/Website image/Product Page.jpg" alt="">
 
 *Product Detail Page*
 
 
-<img src="/Ghaghara-Compilation-013/Website images/Product Details.jpg" alt="">
+<img src="/Ghaghara-Compilation-013/Website image/Product Details.jpg" alt="">
 
 *Cart Page*
 
 
-<img src="/Ghaghara-Compilation-013/Website images/Add to cart.jpg" alt="">
+<img src="/Ghaghara-Compilation-013/Website image/Add to cart.jpg" alt="">
 
 
 ### Features
