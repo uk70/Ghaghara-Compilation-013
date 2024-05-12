@@ -4,11 +4,7 @@
      background-color: black;
  
  }
- *{
-     margin: 0px;
-     padding: 0px;
-     box-sizing: border-box;
- }
+ 
  #vkgparent{
      max-height: auto;
   
@@ -242,10 +238,7 @@
      color: white;
    }
 
-   footer{
-    max-width: 1440px;
-    margin: auto;
-   }
+   
    
    #vk_last{
     color:aliceblue;
