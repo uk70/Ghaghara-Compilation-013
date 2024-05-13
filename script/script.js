@@ -67,7 +67,7 @@ closeIconSignup.addEventListener("click", function(){
     signUpContainer.style.display = "none";
 });
 //signup
-let userURL = "http://localhost:3000/users"
+let userURL = "https://frank-oak-live-servers.onrender.com/users"
 let signUpForm = document.getElementById("signup-form");
 let loginForm = document.getElementById("login-form");
 let userName = document.getElementById("username-field"); 
@@ -222,10 +222,8 @@ async function fetchData(url) {
             console.log(error);
         }
     };
-fetchData("http://localhost:3000/products?gender=women");
+fetchData("https://frank-oak-live-servers.onrender.com/products");
 function appendData(data) {
-  
-        // let womenProducts = data.filter(item => item.gender === "women");
          data.forEach((item) => {
             let card = createCard(item);
             scontainer.append(card);
@@ -345,13 +343,3 @@ carousel.addEventListener("touchend", dragStop);
 
 
 // abdulla
-
-
-
-
-
-
-
-
-
-
