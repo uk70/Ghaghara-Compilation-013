@@ -1,6 +1,7 @@
 
 let scontainer = document.getElementById("sk-container");
-let womenButton = document.getElementById("women-filtering");
+let womenButton = document.getElementById("women-header-filter");
+let menButton = document.getElementById("men-header-filter");
 let shopNowHeader = document.getElementById("shop-now-header-part");
 let searchContainerInputProductPage = document.getElementById("search-container-input-product-page");
 let searchIconProductpage = document.getElementById("search-icon-productpage");
@@ -52,13 +53,21 @@ async function fetchData(url){
     }
 };
 
-fetchData("http://localhost:3000/products");
+fetchData("https://frank-oak-live-servers.onrender.com/products");
 
 
 
 searchIconProductpage.addEventListener("click", ()=>{
     scontainer.innerHTML = "";
-    fetchData(`http://localhost:3000/products?category_like=${searchContainerInputProductPage.value}`)
+    fetchData(`https://frank-oak-live-servers.onrender.com/products?category_like=${searchContainerInputProductPage.value}`)
+})
+
+womenButton.addEventListener("click", ()=>{
+    fetchData("https://frank-oak-live-servers.onrender.com/products?gender=women");
+});
+
+menButton.addEventListener("click", ()=> {
+    fetchData("https://frank-oak-live-servers.onrender.com/products?gender=men");
 })
 
 
