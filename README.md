@@ -10,7 +10,7 @@ Frontend | Backend
 
 ### Deployed Link
 
-Frank And Oak: [Live Demo]()
+Frank And Oak: [Live Demo](https://6641c4a6f60fc17bdb89b7db--cheery-genie-3d5d23.netlify.app/)
 
 ## Directory Structure
 my-app/
@@ -40,53 +40,49 @@ my-app/
 
 **Landing Page**
 
-<img src="/Ghaghara-Compilation-013/Website image/Landing Page.jpg" alt="">
-
+<img src="./Website Image/Landing Page.jpg" alt="">
 
 **Login and Signup Page**
 
-  <img src="/Ghaghara-Compilation-013/Website image/Sign up.jpg" alt="">
-
+<img src="./Website Image/Sign up .jpg" alt="">
 
 **Card Page**
 
-<img src="/Ghaghara-Compilation-013/Website image/Product Page.jpg" alt="">
+<img src="./Website Image/Product Page.jpg" alt="">
 
 **Product Detail Page**
 
-
-<img src="/Ghaghara-Compilation-013/Website image/Product Details.jpg" alt="">
+<img src="./Website Image/Product Details.jpg" alt="">
 
 **Cart Page**
 
-
-<img src="/Ghaghara-Compilation-013/Website image/Add to cart.jpg" alt="">
+<img src="./Website Image/Add to cart.jpg" alt="">
 
 
 ### Features
 
-- *Login and Signup*: "Effortlessly access exclusive deals by logging in or sign up for personalized shopping experiences.
-- *Cart*: Keep track of your favorite deals and products with our convenient cart feature.
-- *Product Details Page*:Explore comprehensive information and make informed decisions on our product details page.
-- *Search bar*: Easily find the deals you love with our intuitive search bar.
-- *carousel*:Discover a dynamic showcase of featured deals with our engaging carousel.
+- **Login and Signup**: "Effortlessly access exclusive deals by logging in or sign up for personalized shopping experiences.
+- **Cart**: Keep track of your favorite deals and products with our convenient cart feature.
+- **Product Details Page**:Explore comprehensive information and make informed decisions on our product details page.
+- **Search bar**: Easily find the deals you love with our intuitive search bar.
+- **carousel**:Discover a dynamic showcase of featured deals with our engaging carousel.
 
 ### Tech Stack
 
-- *HTML*: Provides the structure and content for the web page.
-- *CSS*: Handles the UI and styling, ensuring an appealing visual presentation.
-- *Javascript*:JavaScript empowers dynamic and interactive web experiences through its versatile scripting capabilities.
-- *Json Server*:JSON Server simplifies backend development by allowing you to quickly create a REST API with JSON data, streamlining your development process and enabling rapid prototyping.
+- **HTML**: Provides the structure and content for the web page.
+- **CSS**: Handles the UI and styling, ensuring an appealing visual presentation.
+- **Javascript**:JavaScript empowers dynamic and interactive web experiences through its versatile scripting capabilities.
+- **Json Server**:JSON Server simplifies backend development by allowing you to quickly create a REST API with JSON data, streamlining your development process and enabling rapid prototyping.
 
 ### Design Elements
 
-- *Interactive*: Card will increase in sized in a smooth way when curser hover them.
+- **Interactive**: Card will increase in sized in a smooth way when curser hover them.
 
-- *Carousel*: A responsive slideshow for cycling images or text, with controls and indicators.
+- **Carousel**: A responsive slideshow for cycling images or text, with controls and indicators.
 
-- *Flex and Grid*: Many of the elements takes the benefits of display flex and display grid to provide more control over the deferent layout in different sections of website.
+- **Flex and Grid**: Many of the elements takes the benefits of display flex and display grid to provide more control over the deferent layout in different sections of website.
 
-- *Fonts & Icons*: Integrates Google Fonts and FontAwesome icons for enhanced visual elements. By leveraging these resources, the website achieves a modern and visually appealing design, improving readability and user engagement.
+- **Fonts & Icons**: Integrates Google Fonts and FontAwesome icons for enhanced visual elements. By leveraging these resources, the website achieves a modern and visually appealing design, improving readability and user engagement.
 
 
 ### How to Use
