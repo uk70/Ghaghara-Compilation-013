@@ -1,224 +1,382 @@
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="/Ghaghara-Compilation-013/style/fourth.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="/Ghaghara-Compilation-013/style/fourth.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
 
-
-    
-    <link rel="stylesheet" href="/Ghaghara-Compilation-013/html/product.html">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
-<link rel="stylesheet" href="../style/styles.css">
-<link rel="stylesheet" href="../style/cart.css">
-
+    <link rel="stylesheet" href="/Ghaghara-Compilation-013/html/product.html" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <link rel="stylesheet" href="../style/styles.css" />
+    <link rel="stylesheet" href="../style/cart.css" />
+    <link rel="stylesheet" href="../style/vk_ft30_017.css">
     <script
       src="https://kit.fontawesome.com/312715cfa4.js"
       crossorigin="anonymous"
     ></script>
-</head>
-<body>
+  </head>
+  <body>
     <div id="container">
-        <header>
-          <!-- //abdulla -->
-          <div id="head-container">
-                <div class="head-left">
-                  <div>
-                    <h4>Frank And Oak</h4>
-                  </div>
-                  <div>
-                    <span>Women</span>
-                    <span>Men</span>
-                    <span >Sale</span>
-                    <a href="product.html" id="redirection-product">Shop Now</a>
-                  </div>
-                </div>
-                <div class="head-right">
-                    <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
-                  <i class="fa-regular fa-circle-user" id="login-icon"></i>
-                 <a href="wishlist.html"><i class="fa-regular fa-heart" id="wish-list"></i></a>
-                  <i class="fa-solid fa-bag-shopping" id="cart-icon"></i>
-                </div>
-          </div>
-          <div class="image-container">
-            <img src="https://www.frankandoak.com/cdn/shop/files/desktop_duo_93b0f83b-669a-4570-b87b-4effd4778a5d_2160x.jpg?v=1713300376" alt="" id="headImage">
-            <div class="image-container-middle">
-              <h1>A Mallorca Story</h1>
-              <h2>Spring/Summer 2024</h2>
-              <span id="women-filtering">Women</span>
+      <header>
+        <!-- //abdulla -->
+        <div id="head-container">
+          <div class="head-left">
+            <div>
+              <h4>Frank And Oak</h4>
+            </div>
+            <div id="header-part-right">
+              <span>Women</span>
               <span>Men</span>
+              <span>Sale</span>
+              <a href="product.html" id="redirection-product">Shop Now</a>
             </div>
           </div>
-          <div class="third-section-abdulla">
-              <span><i class="fa-solid fa-truck-fast"></i>Free Shipping over $79</span>
-              <span><i class="fa-solid fa-arrow-rotate-right"></i>Free Returns</span>
-              <span><i class="fa-solid fa-tags"></i>Earn Points</span>
-              <span><i class="fa-regular fa-credit-card"></i>Buy Now, Pay Later</span>
+          <div class="head-right">
+            <i class="fa-solid fa-magnifying-glass" id="search-icon"></i>
+            <i class="fa-regular fa-circle-user" id="login-icon"></i>
+            <a href="wishlist.html"
+              ><i class="fa-regular fa-heart" id="wish-list"></i
+            ></a>
+            <i class="fa-solid fa-bag-shopping" id="cart-icon"></i>
           </div>
-          <div id="form-container">
-            <i class="fa-solid fa-xmark cross-icon" id="close-icon"></i>
-            <h3 class="form-container-heading">Welcome Back</h3>
-            <form class="main-form" id="login-form">
-              <input type="text" id="username-siginup-field" placeholder="User Name" required>
-              <input type="password" name="" id="pwd-signup-field" placeholder="password" required>
-              <button type="submit" id="signup-button">Log In</button>
-            </form>
-            <div class="create-account">
-              <p>Create Account</p>
-              <p>Don't have an account? <span id="to-sign-up">Sign up <i class="fa-solid fa-arrow-right"></i></span></p>
+        </div>
+        <div class="image-container">
+          <img
+            src="https://www.frankandoak.com/cdn/shop/files/desktop_duo_93b0f83b-669a-4570-b87b-4effd4778a5d_2160x.jpg?v=1713300376"
+            alt=""
+            id="headImage"
+          />
+          <div class="image-container-middle">
+            <h1>A Mallorca Story</h1>
+            <h2>Spring/Summer 2024</h2>
+            <span id="women-filtering">Women</span>
+            <span id="men-filtering">Men</span>
+          </div>
+        </div>
+        <div class="third-section-abdulla">
+          <span
+            ><i class="fa-solid fa-truck-fast"></i>Free Shipping over $79</span
+          >
+          <span
+            ><i class="fa-solid fa-arrow-rotate-right"></i>Free Returns</span
+          >
+          <span><i class="fa-solid fa-tags"></i>Earn Points</span>
+          <span
+            ><i class="fa-regular fa-credit-card"></i>Buy Now, Pay Later</span
+          >
+        </div>
+        <div id="form-container">
+          <i class="fa-solid fa-xmark cross-icon" id="close-icon"></i>
+          <h3 class="form-container-heading">Welcome Back</h3>
+          <form class="main-form" id="login-form">
+            <input
+              type="text"
+              id="username-siginup-field"
+              placeholder="User Name"
+              required
+            />
+            <input
+              type="password"
+              name=""
+              id="pwd-signup-field"
+              placeholder="password"
+              required
+            />
+            <button type="submit" id="signup-button">Log In</button>
+          </form>
+          <div class="create-account">
+            <p>Create Account</p>
+            <p>
+              Don't have an account?
+              <span id="to-sign-up"
+                >Sign up <i class="fa-solid fa-arrow-right"></i
+              ></span>
+            </p>
+          </div>
+        </div>
+        <div id="form-container-signup">
+          <i class="fa-solid fa-xmark cross-icon" id="close-icon-signup"></i>
+          <h3 class="form-container-heading">Create your account</h3>
+          <form class="main-form" id="signup-form">
+            <input
+              type="text"
+              id="username-field"
+              placeholder="User Name"
+              required
+            />
+            <input
+              type="email"
+              id="email-field"
+              placeholder="Email address"
+              required
+            />
+            <input
+              type="password"
+              name=""
+              id="pwd-field"
+              placeholder="password"
+              required
+            />
+            <button type="submit" id="signup-button-2">Sign In</button>
+          </form>
+          <p class="create-account">
+            Already have an account?
+            <span id="to-login"
+              >Log In<i class="fa-solid fa-arrow-right"></i
+            ></span>
+          </p>
+        </div>
+        <div id="cart-container">
+          <div class="cart-container-head">
+            <div>
+              <i
+                class="fa-solid fa-arrow-left"
+                id="Continue-shopping-arrow"
+              ></i>
+              <span>Continue Shopping</span>
             </div>
           </div>
-          <div id="form-container-signup">
-            <i class="fa-solid fa-xmark cross-icon" id="close-icon-signup"></i>
-            <h3 class="form-container-heading">Create your account</h3>
-            <form class="main-form" id="signup-form">
-              <input type="text" id="username-field" placeholder="User Name" required>
-              <input type="email" id="email-field" placeholder="Email address" required>
-              <input type="password" name="" id="pwd-field" placeholder="password" required>
-              <button type="submit" id="signup-button-2">Sign In</button>
-            </form>
-            <p class="create-account">Already have an account?  <span id="to-login">Log In<i class="fa-solid fa-arrow-right"></i></span></p>
+          <div class="cart-container-scnd">
+            Free shipping on orders $79+ and free returns.
           </div>
-          <div id="cart-container">
-            <div class="cart-container-head">
-              <div>
-                <i class="fa-solid fa-arrow-left" id="Continue-shopping-arrow"></i>
-                <span>Continue Shopping</span>
-              </div>
+          <div id="products-list"></div>
+          <div id="cart-bottom-part">
+            <div class="cart-container-third">
+              <p id="cart-subTotal"></p>
+              <p id="cart-total"></p>
             </div>
-            <div class="cart-container-scnd">
-              Free shipping on orders $79+ and free returns.
-            </div>
-            <div id="products-list"></div>
-            <div id="cart-bottom-part">
-              <div class="cart-container-third">
-                <p id="cart-subTotal"></p>
-                <p id="cart-total"></p>
-              </div>
-              <div>
-                <button id="cart-container-button">Secure Checkout<i class="fa-solid fa-lock"></i></button>
-              </div>
+            <div>
+              <button id="cart-container-button">
+                Secure Checkout<i class="fa-solid fa-lock"></i>
+              </button>
             </div>
           </div>
-          <div id="search-container">
-              <input type="text" id="search-container-input" placeholder="Search...">
-              <i class="fa-solid fa-magnifying-glass" id="search-icon-container"></i>
-              <i class="fa-solid fa-xmark cross-icon" id="close-icon-search"></i>
+        </div>
+        <div id="search-container">
+          <input
+            type="text"
+            id="search-container-input"
+            placeholder="Search..."
+          />
+          <i
+            class="fa-solid fa-magnifying-glass"
+            id="search-icon-container"
+          ></i>
+          <i class="fa-solid fa-xmark cross-icon" id="close-icon-search"></i>
+        </div>
+        <div id="logout-container">
+          <p id="user-name-show"></p>
+          <p id="logout-btn">logout<i class="fa-solid fa-arrow-right"></i></p>
+        </div>
+        <div></div>
+      </header>
+      <!-- abdulla -->
+      <section>
+        <div class="ss">
+          <div class="ss-text">
+            <h1 class="ss-para">Featured Categories</h1>
           </div>
-          <div id="logout-container">
-            <p id="user-name-show"></p>
-            <p id="logout-btn">logout<i class="fa-solid fa-arrow-right"></i></p>
-          </div>
-          <div></div>
-        </header>
-       <!-- abdulla -->
-         <section>
-         <div class="ss">
-            <div class="ss-text">
-              <h1 class="ss-para">Featured Categories</h1>
+          <div class="ss-grid">
+            <div>
+              <img
+                src="https://www.frankandoak.com/cdn/shop/files/PLP_thumbnail_image_area_adc39dcc-0550-4389-8aa4-7e7fc270f108_900x.jpg?v=1714411971"
+                alt=""
+              />
+              <p>Womens Skirts & Shorts</p>
             </div>
-            <div class="ss-grid">
-              <div>
-                <img src="https://www.frankandoak.com/cdn/shop/files/PLP_thumbnail_image_area_adc39dcc-0550-4389-8aa4-7e7fc270f108_900x.jpg?v=1714411971" alt="">
-                <p>Womens Skirts & Shorts</p>
-              </div>
-              <div>
-                <img src="https://www.frankandoak.com/cdn/shop/files/PLP_thumbnail_image_area_a89f846b-f352-4001-b9fd-d112ee43ad72_900x.jpg?v=1713300541" alt="">
-                <p>Womens T-shirts & Tops</p>
-              </div>
-              <div>
-                <img src="https://www.frankandoak.com/cdn/shop/files/PLP_thumbnail_image_area_copy_c3dc404c-8eab-422d-a26a-c9fab5ead5b3_900x.jpg?v=1714411971" alt="">
-                <p>Mens Pants</p>
-              </div>
-              <div>
-                <img src="https://www.frankandoak.com/cdn/shop/files/PLP_thumbnail_image_area-3_df04a24d-432b-4406-bac5-6b3e9d126682_900x.jpg?v=1713300595" alt="">
-                <p>Mens Polo Shirts</p>
-              </div>
+            <div>
+              <img
+                src="https://www.frankandoak.com/cdn/shop/files/PLP_thumbnail_image_area_a89f846b-f352-4001-b9fd-d112ee43ad72_900x.jpg?v=1713300541"
+                alt=""
+              />
+              <p>Womens T-shirts & Tops</p>
+            </div>
+            <div>
+              <img
+                src="https://www.frankandoak.com/cdn/shop/files/PLP_thumbnail_image_area_copy_c3dc404c-8eab-422d-a26a-c9fab5ead5b3_900x.jpg?v=1714411971"
+                alt=""
+              />
+              <p>Mens Pants</p>
+            </div>
+            <div>
+              <img
+                src="https://www.frankandoak.com/cdn/shop/files/PLP_thumbnail_image_area-3_df04a24d-432b-4406-bac5-6b3e9d126682_900x.jpg?v=1713300595"
+                alt=""
+              />
+              <p>Mens Polo Shirts</p>
             </div>
           </div>
-          <div class="ss-caraousel-container">
-            <h1 class="para-caraousel">This just in</h1>
-            <div class="anker-div">
+        </div>
+        <div class="ss-caraousel-container">
+          <h1 class="para-caraousel">This just in</h1>
+          <div class="anker-div">
             <a href="#" class="anker-caraousel">Women's</a>
             <a href="#" class="anker-caraousel">Men's</a>
           </div>
 
           <div class="sp-container">
             <div class="wrapper">
-              <i id="left" class="fa-solid fa-arrow-left" style="color: #000205;"></i>
+              <i
+                id="left"
+                class="fa-solid fa-arrow-left"
+                style="color: #000205"
+              ></i>
               <div class="carousel">
-                <img src="https://www.frankandoak.com/cdn/shop/files/2220119-012.01_1200x.jpg?v=1711461203" alt="img" draggable="false">
-                <img src="https://www.frankandoak.com/cdn/shop/files/1210525-2KP.01_1200x.jpg?v=1711572098" alt="img" draggable="false">
-                <img src="https://www.frankandoak.com/cdn/shop/files/2940049-045.921_1200x.jpg?v=1711124689" alt="img" draggable="false">
-                <img src="https://www.frankandoak.com/cdn/shop/files/1210525-559.01_60d08654-e141-4967-ab86-7aa6c2000661_1200x.jpg?v=1712857183" alt="img" draggable="false">
-                <img src="https://www.frankandoak.com/cdn/shop/files/2220136-3AL.01_1200x.jpg?v=1713794505" alt="img" draggable="false">
-                <img src="https://www.frankandoak.com/cdn/shop/files/1110701-2CF.01_1200x.jpg?v=1709868705" alt="img" draggable="false">
-                <img src="https://www.frankandoak.com/cdn/shop/files/2120487-002.01_1200x.jpg?v=1712868740" alt="img" draggable="false">
-                <img src="https://www.frankandoak.com/cdn/shop/files/1110705-464.02_1200x.jpg?v=1711571124" alt="img" draggable="false">
+                <img
+                  src="https://www.frankandoak.com/cdn/shop/files/2220119-012.01_1200x.jpg?v=1711461203"
+                  alt="img"
+                  draggable="false"
+                />
+                <img
+                  src="https://www.frankandoak.com/cdn/shop/files/1210525-2KP.01_1200x.jpg?v=1711572098"
+                  alt="img"
+                  draggable="false"
+                />
+                <img
+                  src="https://www.frankandoak.com/cdn/shop/files/2940049-045.921_1200x.jpg?v=1711124689"
+                  alt="img"
+                  draggable="false"
+                />
+                <img
+                  src="https://www.frankandoak.com/cdn/shop/files/1210525-559.01_60d08654-e141-4967-ab86-7aa6c2000661_1200x.jpg?v=1712857183"
+                  alt="img"
+                  draggable="false"
+                />
+                <img
+                  src="https://www.frankandoak.com/cdn/shop/files/2220136-3AL.01_1200x.jpg?v=1713794505"
+                  alt="img"
+                  draggable="false"
+                />
+                <img
+                  src="https://www.frankandoak.com/cdn/shop/files/1110701-2CF.01_1200x.jpg?v=1709868705"
+                  alt="img"
+                  draggable="false"
+                />
+                <img
+                  src="https://www.frankandoak.com/cdn/shop/files/2120487-002.01_1200x.jpg?v=1712868740"
+                  alt="img"
+                  draggable="false"
+                />
+                <img
+                  src="https://www.frankandoak.com/cdn/shop/files/1110705-464.02_1200x.jpg?v=1711571124"
+                  alt="img"
+                  draggable="false"
+                />
               </div>
               <i id="right" class="fa-solid fa-arrow-right"></i>
             </div>
-            </div>
-
-
+          </div>
         </div>
-        </section> 
-        <section>
-          <!-- shreya -->
-          <div class="sk">
-            <div class="sk1"></div>
-            <div class="sk2">
-              <div class="sk3">
+      </section>
+      <section>
+        <!-- shreya -->
+        <div class="sk">
+          <div class="sk1"></div>
+          <div class="sk2">
+            <div class="sk3">
               <h2>Made for tan lines</h2>
               <p>New swimwear silhouettes made with recycled materials.</p>
               <!--  -->
               <div class="caraousel-container">
-              <div class="sk-caraousel">
-                <button id="prev-slide" class="slide-button material-symbols-rounded">chevron_left</button>
-                <div class="sk-cimage">
-                  <img src="https://www.frankandoak.com/cdn/shop/files/2610052-5A.01.jpg?crop=center&height=420&v=1713801355&width=314" alt="" class="sk-images">
-                  <img src="https://www.frankandoak.com/cdn/shop/files/2610055-00E.01.jpg?crop=center&height=420&v=1713966665&width=314" alt="" class="sk-images">
-                  <img src="https://www.frankandoak.com/cdn/shop/files/2610049-002.02_700bcd48-f89b-4cf1-b832-14d37f2eaf9f.jpg?crop=center&height=420&v=1713965657&width=314" alt="" class="sk-images">
-                  <img src="https://www.frankandoak.com/cdn/shop/files/2610051-5JQ.01.jpg?crop=center&height=420&v=1713797169&width=314" alt="" class="sk-images">
+                <div class="sk-caraousel">
+                  <button
+                    id="prev-slide"
+                    class="slide-button material-symbols-rounded"
+                  >
+                    chevron_left
+                  </button>
+                  <div class="sk-cimage">
+                    <img
+                      src="https://www.frankandoak.com/cdn/shop/files/2610052-5A.01.jpg?crop=center&height=420&v=1713801355&width=314"
+                      alt=""
+                      class="sk-images"
+                    />
+                    <img
+                      src="https://www.frankandoak.com/cdn/shop/files/2610055-00E.01.jpg?crop=center&height=420&v=1713966665&width=314"
+                      alt=""
+                      class="sk-images"
+                    />
+                    <img
+                      src="https://www.frankandoak.com/cdn/shop/files/2610049-002.02_700bcd48-f89b-4cf1-b832-14d37f2eaf9f.jpg?crop=center&height=420&v=1713965657&width=314"
+                      alt=""
+                      class="sk-images"
+                    />
+                    <img
+                      src="https://www.frankandoak.com/cdn/shop/files/2610051-5JQ.01.jpg?crop=center&height=420&v=1713797169&width=314"
+                      alt=""
+                      class="sk-images"
+                    />
+                  </div>
+                  <button
+                    id="next-slide"
+                    class="slide-button material-symbols-rounded"
+                  >
+                    chevron_right
+                  </button>
                 </div>
-                <button id="next-slide" class="slide-button material-symbols-rounded">chevron_right</button>
-              </div>
-              <div class="slider-scrollbar">
-                <div class="scrollbar-track">
-                  <div class="scrollbar-thumb"></div>
+                <div class="slider-scrollbar">
+                  <div class="scrollbar-track">
+                    <div class="scrollbar-thumb"></div>
+                  </div>
                 </div>
               </div>
-            </div>
               <!--  -->
               <a href="product.html" id="diveWomen">Dive in</a>
             </div>
           </div>
-          </div>
-          <!-- MEN -->
-          <div class="skk">
-            <div class="skk2">
-              <div class="skk3">
+        </div>
+        <!-- MEN -->
+        <div class="skk">
+          <div class="skk2">
+            <div class="skk3">
               <h2>Your summer uniform</h2>
               <p>New packable swimshorts designed with your comfort in mind.</p>
               <div class="caraousel-container-men">
                 <div class="sk-caraousel-men">
-                  <button id="prev-slide-men" class="slide-button material-symbols-rounded">chevron_left</button>
+                  <button
+                    id="prev-slide-men"
+                    class="slide-button material-symbols-rounded"
+                  >
+                    chevron_left
+                  </button>
                   <div class="sk-cimage">
-                    <img src="https://www.frankandoak.com/cdn/shop/files/1610035-002.01.jpg?crop=center&height=420&v=1713876521&width=314" alt="" class="sk-images">
-                    <img src="https://www.frankandoak.com/cdn/shop/files/1610036-00P.01.jpg?crop=center&height=420&v=1713800507&width=314" alt="" class="sk-images">
-                    <img src="https://www.frankandoak.com/cdn/shop/files/1610035-5AV.01.jpg?crop=center&height=420&v=1713876880&width=314" alt="" class="sk-images">
-                    <img src="https://www.frankandoak.com/cdn/shop/files/1610037-4LO.01.jpg?crop=center&height=420&v=1713886184&width=314" alt="" class="sk-images">
+                    <img
+                      src="https://www.frankandoak.com/cdn/shop/files/1610035-002.01.jpg?crop=center&height=420&v=1713876521&width=314"
+                      alt=""
+                      class="sk-images"
+                    />
+                    <img
+                      src="https://www.frankandoak.com/cdn/shop/files/1610036-00P.01.jpg?crop=center&height=420&v=1713800507&width=314"
+                      alt=""
+                      class="sk-images"
+                    />
+                    <img
+                      src="https://www.frankandoak.com/cdn/shop/files/1610035-5AV.01.jpg?crop=center&height=420&v=1713876880&width=314"
+                      alt=""
+                      class="sk-images"
+                    />
+                    <img
+                      src="https://www.frankandoak.com/cdn/shop/files/1610037-4LO.01.jpg?crop=center&height=420&v=1713886184&width=314"
+                      alt=""
+                      class="sk-images"
+                    />
                   </div>
-                  <button id="next-slide-men" class="slide-button material-symbols-rounded">chevron_right</button>
+                  <button
+                    id="next-slide-men"
+                    class="slide-button material-symbols-rounded"
+                  >
+                    chevron_right
+                  </button>
                 </div>
                 <div class="slider-scrollbar-men">
                   <div class="scrollbar-track-men">
@@ -230,280 +388,271 @@
             </div>
           </div>
           <div class="skk1"></div>
-          </div>
-        </section>
-        <section>
-          <!-- ricky -->
-
-              <!-- first part start here -->
-            <div id="rickyMain">        
-    <div>
-      <div class="carousel">
-          <div id="firstText">You didn’t hear it from us</div>
-            <div class="carousel-cards">
+        </div>
+      </section>
+      <section>
+        <!-- ricky -->
+        <div id="rickyMain">
+          <div>
+            <div class="carousel">
+              <div id="firstText">You didn&apos;t hear it from us</div>
+              <div class="carousel-cards">
                 <div class="cards">
-                    <div class="rk-card">
-                      <div class="move">
+                  <div class="rk-card">
+                    <div class="move">
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
                       <i class="fa-solid fa-star"></i>
-                      <i class="fa-solid fa-star"></i><span>Based on 242 review</span>
-                      <p>Love the jacket.The fit and <br>
-                      fabric are amazing.
-                      i ordrd the other color as well.</p>
+                      <i class="fa-solid fa-star"></i
+                      ><span>Based on 242 review</span>
+                      <p>
+                        Love the jacket.The fit and <br />
+                        fabric are amazing. i ordrd the other color as well.
+                      </p>
                       <p>Elaine D.</p>
-                      <a href="index2.html" id="shopNow">Shop now</a>
+                      <a href="index2.html" class="shopNow">Shop now</a>
                     </div>
-                    </div>  
-                    <img src="https://www.frankandoak.com/cdn/shop/files/2410187-002.8823.jpg?crop=center&height=880&v=1690989905&width=672" alt=""  class="rk-carasoleImages">
-                </div>
-                <div class="cards">
-                    <div class="rk-card">
-                      <div class="move">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i><span>Based on 314 review</span>
-                        <p>Love the jacket.The fit and <br>
-                        fabric are amazing.
-                        i ordrd the other color as well.</p>
-                        <p>Elaine D.</p>
-                        <a href="index2.html" id="shopNow">Shop now</a>
-                      </div>
-                    </div>
-                    <img src="https://www.frankandoak.com/cdn/shop/files/1110352-403.7643.jpg?crop=center&height=880&v=1690985687&width=672" alt="" class="rk-carasoleImages">
-                </div>
-                <div class="cards">
-                    <div class="rk-card">
-                      <div class="move">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i><span>Based on 106 review</span>
-                        <p>Love the jacket.The fit and <br>
-                        fabric are amazing.
-                        i ordrd the other color as well.</p>
-                        <p>Elaine D.</p>
-                        <a href="index2.html" id="shopNow">Shop now</a>
-                      </div>
-                    </div>
-                    <img src="https://www.frankandoak.com/cdn/shop/files/2210502-002.8968.jpg?crop=center&height=880&v=1692114713&width=672" alt="" class="rk-carasoleImages">
-                </div>
-                <div class="cards">
-                    <div class="rk-card">
-                      <div class="move">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i><span>Based on 197 review</span>
-                        <p>Love the jacket.The fit and <br>
-                        fabric are amazing.
-                        i ordrd the other color as well.</p>
-                        <p>Elaine D.</p>
-                        <a href="index2.html" id="shopNow">Shop now</a>
-                      </div>
-                    </div>
-                    <img src="https://www.frankandoak.com/cdn/shop/files/1410245-002.7329.jpg?crop=center&height=880&v=1698342207&width=672" alt="" class="rk-carasoleImages">
-                </div>
-                <div class="cards">
-                    <div class="rk-card">
-                      <div class="move">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i><span>Based on 184 review</span>
-                        <p>Love the jacket.The fit and <br>
-                        fabric are amazing.
-                        i ordrd the other color as well.</p>
-                        <p>Elaine D.</p>
-                        <a href="index2.html" id="shopNow">Shop now</a>
-                      </div>
-                    </div>
-                    <img src="https://www.frankandoak.com/cdn/shop/files/2410187-002.8823.jpg?crop=center&height=880&v=1690989905&width=672" alt="" class="rk-carasoleImages">
-                </div>
-            </div>
-            <button class="prev-btn"><i class="fas fa-arrow-left" id="io"></i></button>
-            <button class="next-btn"><i class="fas fa-arrow-right" id="io"></i></</button>
-        </div>
-
-  </div>
-  <!-- first part end here -->
-  <div class="rickyFourContainer">
-    <div class="textContainer">
-        <div class="pChild">
-            <p class="desgineinCanada">Designed in Canada. <br>Inspire Better Living.</p>
-            <p class="ourPurpose">Our purpose is to inspire a better way of living by creating conscious products that last through time.</p>
-            <a href="#" class="whoWeAre">Who We Are</a>
-        </div>
-    </div>
-    <div class="imageContainer">
-        <img src="https://www.frankandoak.com/cdn/shop/files/Tile_desktop_2_900x.jpg?v=1712334213" alt="" class="fourImage">
-        <img src="https://www.frankandoak.com/cdn/shop/files/story-design_900x.jpg?v=1712160804" alt="" class="fourImage">
-        <img src="https://www.frankandoak.com/cdn/shop/files/Tile_desktop_3_900x.jpg?v=1712334263" alt="" class="fourImage">
-        <img src="https://www.frankandoak.com/cdn/shop/files/story-partners_900x.jpg?v=1712160804" alt="" class="fourImage">
-    </div>
-</div>
-          <!--ricky end part here-->
-        </section>
-        <footer>
-          <!-- vishal -->
-<div id="vk_container">
-        <div id="vkgparent">
-          <div id="vk_one" class="vk_topcard">
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="68px"
-                viewBox="0 -960 960 960"
-                width="88px"
-                fill="#e8eaed"
-              >
-                <path
-                  d="M224.12-161q-49.12 0-83.62-34.42Q106-229.83 106-279H40v-461q0-24 18-42t42-18h579v167h105l136 181v173h-71q0 49.17-34.38 83.58Q780.24-161 731.12-161t-83.62-34.42Q613-229.83 613-279H342q0 49-34.38 83.5t-83.5 34.5Zm-.12-60q24 0 41-17t17-41q0-24-17-41t-41-17q-24 0-41 17t-17 41q0 24 17 41t41 17ZM100-339h22q17-27 43.04-43t58-16q31.96 0 58.46 16.5T325-339h294v-401H100v401Zm631 118q24 0 41-17t17-41q0-24-17-41t-41-17q-24 0-41 17t-17 41q0 24 17 41t41 17Zm-52-204h186L754-573h-75v148ZM360-529Z"
-                />
-              </svg>
-            </span>
-            <h3>Free Shipping</h3>
-            <p>On orders over $79.</p>
-          </div>
-          <div id="vk_two" class="vk_topcard">
-            <span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                height="68px"
-                viewBox="0 -960 960 960"
-                width="88px"
-                fill="#e8eaed"
-              >
-                <path
-                  d="M480-160q-133 0-226.5-93.5T160-480q0-133 93.5-226.5T480-800q85 0 149 34.5T740-671v-129h60v254H546v-60h168q-38-60-97-97t-137-37q-109 0-184.5 75.5T220-480q0 109 75.5 184.5T480-220q83 0 152-47.5T728-393h62q-29 105-115 169t-195 64Z"
-                />
-              </svg>
-            </span>
-
-            <h3>Free Returns</h3>
-            <p>Only keep what you love.</p>
-          </div>
-          <div id="vk_three" class="vk_topcard">
-            <span>
-              <img src="./buy.png" alt="" />
-            </span>
-
-            <h3>Frank Rewards</h3>
-            <p>Earn points and get rewards.</p>
-          </div>
-          <div id="vk_four" class="vk_topcard">
-            <span>
-              <img src="./pay.png" alt="" />
-            </span>
-
-            <h3>Buy Now, Pay Later</h3>
-            <p>Select Klarna at checkout.</p>
-          </div>
-        </div>
-        <!--  -->
-        <div id="vk_parent">
-          <div id="vk_lowcard">
-            <div id="vk_son1">
-              <span id="vk_logo1" class="vk_logo">
-                <a href="other.html">
+                  </div>
                   <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0uaqggGa4tZnNQ06fxe8VJA-3_r6OUZNtpz0zDw1PQw&s"
+                    src="https://www.frankandoak.com/cdn/shop/files/2410187-002.8823.jpg?crop=center&height=880&v=1690989905&width=672"
                     alt=""
-                /></a>
-              </span>
-              <div id="vk_social">
-                <span><i class="fa-brands fa-instagram"></i></span>
-                <span><i class="fa-brands fa-facebook"></i></span>
-                <span><i class="fa-brands fa-twitter"></i></span>
-                <span> <i class="fa-brands fa-pinterest"></i></span
-                ><span> <i class="fa-regular fa-envelope"></i> </span
-                ><span></span
-                ><span>
-                  <i class="fa-brands fa-linkedin"></i>
-                </span>
-              </div>
-
-              <span id="vk_logo2" class="vk_logo">
-                <a href="ab.html">
-                  <img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_fqXYPyvg6Ayak04b8--fM63YRSjEwHIkLIDpf3iumQ&s"
-                    alt=""
+                    class="rk-carasoleImages"
                   />
-                </a>
-              </span>
-            </div>
-            <div id="vk_son2">
-              <table id="ourLinks">
-                <thead>
-                  <tr>
-                    <th><h1>Our Story</h1></th>
-                    <th><h1>Discover</h1></th>
-                    <th><h1>Customer Care</h1></th>
-                  </tr>
-                </thead>
-                <tbody></tbody>
-              </table>
-            </div>
-
-            <div id="vk_son3">
-              <h1 id="one_vk">Stay in touch</h1>
-              <div id="two_vk">
-                Join our newsletter and stay in the know about new collections,
-                <br />outfit inspiration, sales, and more.
-              </div>
-              <div id="vk_inpt">
-                <label for="em" class="box1"></label>
-                <input
-                  type="text"
-                  value=""
-                  id="emailInput"
-                  placeholder="EMAIL"
-                  class="box1"
-                />
-                <div id="emailError" class="error-message"></div>
-                <label for="nm" class="box1"> </label>
-                <input
-                  type="text"
-                  value=""
-                  id="nameInput"
-                  placeholder="FIRST NAME"
-                  class="box1"
-                /><br />
-                <div id="nameError" class="error-message"></div>
-                <div class="box2_vk">
-                  <label for="women">I shop for</label>
-                  <input type="radio" id="women" name="shopFor" value="women" />
-                  <label for="women">women</label>
-                  <input type="radio" id="men" name="shopFor" value="men" />
-                  <label for="men">men</label>
-                  <input type="radio" id="all" name="shopFor" value="all" />
-                  <label for="all">all</label>
-
-                  <br />
+                </div>
+                <div class="cards">
+                  <div class="rk-card">
+                    <div class="move">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i
+                      ><span>Based on 314 review</span>
+                      <p>
+                        Love the jacket.The fit and <br />
+                        fabric are amazing. i ordrd the other color as well.
+                      </p>
+                      <p>Elaine D.</p>
+                      <a href="index2.html" class="shopNow">Shop now</a>
+                    </div>
+                  </div>
+                  <img
+                    src="https://www.frankandoak.com/cdn/shop/files/1110352-403.7643.jpg?crop=center&height=880&v=1690985687&width=672"
+                    alt=""
+                    class="rk-carasoleImages"
+                  />
+                </div>
+                <div class="cards">
+                  <div class="rk-card">
+                    <div class="move">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i
+                      ><span>Based on 106 review</span>
+                      <p>
+                        Love the jacket.The fit and <br />
+                        fabric are amazing. i ordrd the other color as well.
+                      </p>
+                      <p>Elaine D.</p>
+                      <a href="index2.html" class="shopNow">Shop now</a>
+                    </div>
+                  </div>
+                  <img
+                    src="https://www.frankandoak.com/cdn/shop/files/2210502-002.8968.jpg?crop=center&height=880&v=1692114713&width=672"
+                    alt=""
+                    class="rk-carasoleImages"
+                  />
+                </div>
+                <div class="cards">
+                  <div class="rk-card">
+                    <div class="move">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i
+                      ><span>Based on 197 review</span>
+                      <p>
+                        Love the jacket.The fit and <br />
+                        fabric are amazing. i ordrd the other color as well.
+                      </p>
+                      <p>Elaine D.</p>
+                      <a href="index2.html" class="shopNow">Shop now</a>
+                    </div>
+                  </div>
+                  <img
+                    src="https://www.frankandoak.com/cdn/shop/files/1410245-002.7329.jpg?crop=center&height=880&v=1698342207&width=672"
+                    alt=""
+                    class="rk-carasoleImages"
+                  />
+                </div>
+                <div class="cards">
+                  <div class="rk-card">
+                    <div class="move">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i
+                      ><span>Based on 184 review</span>
+                      <p>
+                        Love the jacket.The fit and <br />
+                        fabric are amazing. i ordrd the other color as well.
+                      </p>
+                      <p>Elaine D.</p>
+                      <a href="index2.html" class="shopNow">Shop now</a>
+                    </div>
+                  </div>
+                  <img
+                    src="https://www.frankandoak.com/cdn/shop/files/2410187-002.8823.jpg?crop=center&height=880&v=1690989905&width=672"
+                    alt=""
+                    class="rk-carasoleImages"
+                  />
                 </div>
               </div>
-              <button id="subscribeButton">Subscribe all</button>
+              <button class="prev-btn">
+                <i class="fas fa-arrow-left io"></i>
+              </button>
+              <button class="next-btn">
+                <i class="fas fa-arrow-right io"></i>
+              </button>
             </div>
           </div>
         </div>
-        <div style="color: aliceblue; padding-left: 7%">
-          © Frank And Oak 2024 , All Rights Reserved.
+        <!-- first part end here -->
+        <div class="rickyFourContainer">
+          <div class="textContainer">
+            <div class="pChild">
+              <p class="desgineinCanada">
+                Designed in Canada. <br />Inspire Better Living.
+              </p>
+              <p class="ourPurpose">
+                Our purpose is to inspire a better way of living by creating
+                conscious products that last through time.
+              </p>
+              <a href="#" class="whoWeAre">Who We Are</a>
+            </div>
+          </div>
+          <div class="imageContainer">
+            <img
+              src="https://www.frankandoak.com/cdn/shop/files/Tile_desktop_2_900x.jpg?v=1712334213"
+              alt=""
+              class="fourImage"
+            />
+            <img
+              src="https://www.frankandoak.com/cdn/shop/files/story-design_900x.jpg?v=1712160804"
+              alt=""
+              class="fourImage"
+            />
+            <img
+              src="https://www.frankandoak.com/cdn/shop/files/Tile_desktop_3_900x.jpg?v=1712334263"
+              alt=""
+              class="fourImage"
+            />
+            <img
+              src="https://www.frankandoak.com/cdn/shop/files/story-partners_900x.jpg?v=1712160804"
+              alt=""
+              class="fourImage"
+            />
+          </div>
         </div>
-      </div>
-   
 
-   
-
-            
-        </footer>
+        <!--ricky end part here-->
+      </section>
+      <footer>
+        <div class="sk-foot-container">
+          <div class="sk-foot-container-son">
+            <div class="sk-foot1">
+              <img
+                src="https://image.pitchbook.com/TF1G8VX2INpsvUYFzsmNbKdIZSf1693233775973_200x200"
+                alt=""
+              />
+            </div>
+            <a href="#"
+              ><i class="fa-brands fa-instagram" style="color: #ffffff"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-facebook-f" style="color: #ffffff"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-twitter" style="color: #ffffff"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-pinterest-p" style="color: #ffffff"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-regular fa-envelope" style="color: #ffffff"></i
+            ></a>
+            <a href="#"
+              ><i class="fa-brands fa-linkedin-in" style="color: #ffffff"></i
+            ></a>
+            <div class="sk-certified">
+              <img
+                src="/Ghaghara-Compilation-013/Certified footer.PNG"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="sk-foot-container-son1">
+            <div class="story">
+              <div class="story1">Our Story</div>
+              <p>Who we are</p>
+              <p>Sustainable practices</p>
+              <p>Design Ideology</p>
+              <p>Fabrics</p>
+              <p>Circular denim<sup>TM</sup></p>
+              <p>Partners and Factories</p>
+            </div>
+            <div class="sk-foot-container-son2">
+              <div class="discover">
+                <div class="discover1">Discover</div>
+                <p>Gift Cards</p>
+                <p>Frank Rewards</p>
+                <p>Give $15, Get $15</p>
+                <p>Affiliate</p>
+                <p>Work with us</p>
+                <p>Our Stores</p>
+              </div>
+            </div>
+            <div class="sk-foot-container-son3">
+              <div class="customer-care">
+                <div class="customer-care1">Customer Care</div>
+                <p>Shipping Information</p>
+                <p>Returns & Exchanges</p>
+                <p>Coupon Codes</p>
+                <p>F.A.Q.</p>
+                <p>Terms & Conditions</p>
+                <p>Refund Policy</p>
+                <p>Privacy policy</p>
+                <p>Accessibility Statement</p>
+                <p>Customer Data Requests</p>
+              </div>
+            </div>
+            <div class="sk-foot-container-son4">
+              <div class="stayin">
+                <div class="stayin1">Stay in touch</div>
+                <p>
+                  Join our newsletter and stay in the know about new
+                  collections, outfit inspiration, sales, and more.
+                </p>
+                <input type="email" placeholder="Email" required /><br>
+                <input type="text" placeholder="First Name" required />
+                <div class="shopby">
+                  I shop for <input type="radio" />Women
+                  <input type="radio" />Men <input type="radio" />All
+                  <button>Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="copyright">© Frank And Oak 2024 , All Rights Reserved.</p>
+      </footer>
     </div>
-</body>
+  </body>
 </html>
 <!-- fourth script part -->
 <script src="/Ghaghara-Compilation-013/script/Caraousel.js" defer></script>
@@ -511,9 +660,4 @@
 <script src="../script/product.js"></script>
 <script src="../script/cart.js"></script>
 <script src="../script/login.js"></script>
- <script src="./index.js"></script>
-
-
-
-
-
+<script src="./index.js"></script>
