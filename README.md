@@ -38,26 +38,26 @@ my-app/
 
 ### Screenshots
 
-*Landing Page*
+**Landing Page**
 
 <img src="/Ghaghara-Compilation-013/Website image/Landing Page.jpg" alt="">
 
 
-*Login and Signup Page*
+**Login and Signup Page**
 
-  <img src="/Ghaghara-Compilation-013/Website image/Sign up .jpg" alt="">
+  <img src="/Ghaghara-Compilation-013/Website image/Sign up.jpg" alt="">
 
 
-*Card Page*
+**Card Page**
 
 <img src="/Ghaghara-Compilation-013/Website image/Product Page.jpg" alt="">
 
-*Product Detail Page*
+**Product Detail Page**
 
 
 <img src="/Ghaghara-Compilation-013/Website image/Product Details.jpg" alt="">
 
-*Cart Page*
+**Cart Page**
 
 
 <img src="/Ghaghara-Compilation-013/Website image/Add to cart.jpg" alt="">
