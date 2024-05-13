@@ -512,7 +512,7 @@
         product.forEach(ele => {
             let inner = document.createElement("div");
             inner.className = "imgs";
-            inner.innerHTML = <img src="${ele.Image}" alt="">;
+            inner.innerHTML = `<img src="${ele.Image}" alt="">`;
             div.appendChild(inner);
         });
     }
