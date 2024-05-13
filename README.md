@@ -40,23 +40,23 @@ my-app/
 
 **Landing Page**
 
-<img src="./Website Image/Landing Page.jpg" alt="">
+<img src="./Website Image/Landing Page.png" alt="">
 
 **Login and Signup Page**
 
-<img src="./Website Image/Sign up .jpg" alt="">
+<img src="./Website Image/Sign up .png" alt="">
 
 **Card Page**
 
-<img src="./Website Image/Product Page.jpg" alt="">
+<img src="./Website Image/Product Page.png" alt="">
 
 **Product Detail Page**
 
-<img src="./Website Image/Product Details.jpg" alt="">
+<img src="./Website Image/Product Details.png" alt="">
 
 **Cart Page**
 
-<img src="./Website Image/Add to cart.jpg" alt="">
+<img src="./Website Image/Add to cart.png" alt="">
 
 
 ### Features
